@@ -5,7 +5,7 @@ import pandas as pd
 from Functions import get_youtube_comments, sentiment_analysis,save_comments_to_json
 from textblob import TextBlob
 
-#pleda link: https://www.youtube.com/watch?v=89LOsf8pDhY
+#pelda link: https://www.youtube.com/watch?v=89LOsf8pDhY
 
 app = Flask(__name__)
 """

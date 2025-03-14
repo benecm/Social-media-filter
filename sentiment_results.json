@@ -1203,5 +1203,305 @@
         "Comment": "Mind Blowing ❤️",
         "Polarity": 0.0,
         "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Best video by far",
+        "Polarity": 0.55,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Best Git Tutorial Ever!!!!!!!",
+        "Polarity": 1.0,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "So every time i use token\nWtf\n😒",
+        "Polarity": -0.5,
+        "Sentiment": "Negative"
+    },
+    {
+        "Comment": "Thank you very much",
+        "Polarity": 0.26,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Thanks you, so helped me so much, easy and useful guide for complete begginers usage linux!!",
+        "Polarity": 0.27239583333333334,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Very helpful, thank you sir!!",
+        "Polarity": 0.3125,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Thanks alot buddy",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "it still asks me password and even after I give it my password it rejects my push to origin main.",
+        "Polarity": 0.16666666666666666,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Thank you so much. This is really simple and explained in easy way",
+        "Polarity": 0.2111111111111111,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Wish you would do more than just the basics that everyone else is doing. Best practice like private repo, no reply address, signing key...",
+        "Polarity": 0.375,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "really very useful",
+        "Polarity": 0.39,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "i have done it man , thank you so much",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "very simple and complete every thing great thanks",
+        "Polarity": 0.275,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "I have a one question I follow all your video but a can't paste on GitHub",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "7:46 Ctrl+V does not work for pasting the URL. After pressing that command, I get this pasted   ^V   in the terminal window of Ubuntu. Any suggestions?",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Thank you!",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "u can clear terminal by ctrl+l",
+        "Polarity": 0.09999999999999999,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Just thank you bro very impressive and great work done am happy to follow you always",
+        "Polarity": 0.8666666666666667,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Do we have to configure everytime for each repository?",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Hablas ingles muy bien!! Es la primera vez que entiendo todo un vídeo en idioma ingles, muchas gracias!! ",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Thanks a lot",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "is the authentication issue only for Linux ? I havent observed it when using Windows ..........",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Thank you, very helpful!",
+        "Polarity": 0.25,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Thank you so much! Nice video!",
+        "Polarity": 0.75,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "фигня, не работает",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "great video \nik i didn't get everything alot of things are just watch and do for me \nbut i know i'll make it with decent practice || those things are not something u'll master in just one shot\ndon't get overwhelmed just do it",
+        "Polarity": 0.48333333333333334,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Thank you brother.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "it just isnt working for me",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "very helpful thanks.",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Thank you so much.",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "I get this error. Your push would publish a private email address.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Very informative video. Thanks",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "OH man Thank you very much",
+        "Polarity": 0.26,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Thank u, the video really helps a lot",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "thank you homie",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Thank you very much for posting this tutorial, it is very clear and concise to get started with Git/GitHub and is greatly appreciated.  Thanks!!",
+        "Polarity": 0.20049999999999998,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Hi, im getting issues. This doesnt work if im running ubuntu on a virtual machine it seems.\n\n@8:20 when i clone my repo, it doesn't work. Weird thing was, they asked for my github username and password, i gave them and the error was: \"support for password authentication was removed on August 13, 2021\".",
+        "Polarity": -0.5,
+        "Sentiment": "Negative"
+    },
+    {
+        "Comment": "You helped me - thumbs-up. Just a quick update for the video, though: they must have added \"Push protection\", which scans for anything that looks like a password in files you are trying to push. If they find it, the push is rejected. You can override this from user's Settings (top right, icon where you click for Profile) > Settings > Code security and analysis > under User and against \"Push protection for yourself\" click Disable.",
+        "Polarity": 0.373015873015873,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Most simple install/configure method I've seen by far. Thank you!!!",
+        "Polarity": 0.23177083333333334,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "You're amazing!!!!!!!!!!!!!! TYVM my friend!! 😍",
+        "Polarity": 1.0,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Was looking for a solution and this worked for me. Thanks a lot friend. Thumbs up",
+        "Polarity": 0.2,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "WHEN I RUN THE FIRST COMMAND IT SHOWS  USER IS NOT IN SUDOER S FILE???",
+        "Polarity": 0.25,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "thank you!",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "SUPER USEFUL THANK YOU!",
+        "Polarity": 0.35416666666666663,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "THANK YOU VERY MUCH OMG. I'VE BEEN SEARCHING HOW TO SOLVE THIS UBUNTU PROBLEM FOR 2 WHOLE DAYS.",
+        "Polarity": 0.23,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "*KEEP UP THE GOOD WORK, VERY INFORMATIVE*",
+        "Polarity": 0.44999999999999996,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "shit",
+        "Polarity": -0.2,
+        "Sentiment": "Negative"
+    },
+    {
+        "Comment": "Excellent! Thanks.",
+        "Polarity": 0.6,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Many thanks, pknowledge",
+        "Polarity": 0.35,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Easy to follow and understand! Thanks!",
+        "Polarity": 0.39583333333333337,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "why not just setup ssh?",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Excellent tutorial",
+        "Polarity": 1.0,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "VERY THANK YOU!!!!",
+        "Polarity": 0.48828125,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Nice. Thanks.",
+        "Polarity": 0.4,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Very clear explanation sir...\n\nBut I didn't understand how to get  the URL @16:38 \n\nCan you plz explain...",
+        "Polarity": 0.13,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Sir, This will work, but it has some security risks and disadvantages:\n\n 1. Security Risks: If we ever accidentally print your remote URLs (for example by running git remote -v), our token will be exposed. It's especially risky if we're in a screen-sharing situation, or if our terminal history is accessible to others.\n\n 2. Inconvenience: we would need to include the token every time you clone a repository or set a remote URL. This can be cumbersome, particularly if we are working with many repositories.\n\n 3. Token Expiry/Revocation: If your token ever expires or is revoked for any reason, you'll need to update all the places where we've hard-coded the token\nCould you make video on  how to use git credential helper in Ubuntu?",
+        "Polarity": 0.10595238095238095,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Best tutorial. Everything done very smoothly. Thank You sir.",
+        "Polarity": 0.76,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "everything went well !!! thank you !",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "Thanks alot for this tut, can you also make a video on the same but using ssh instead of https?",
+        "Polarity": 0.1,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "Best tutorial on Git. Very easy to understand and up to the point, unlike others who make it look too complex.",
+        "Polarity": 0.42111111111111116,
+        "Sentiment": "Positive"
     }
 ]

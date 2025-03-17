@@ -2,9 +2,9 @@ import os
 from langchain.agents import initialize_agent
 from langchain.tools import Tool
 from langchain.agents import AgentType
-from agents.sentiment_agent import sentiment_tool
-from agents.bot_agent import bot_detection_tool
-from agents.reasoning_agent import reasoning_tool
+from agents.sentiment_agent import analyze_sentiment
+from agents.bot_agent import detect_bots
+from agents.reasoning_agent import summarize_comments
 
 # Adatmappa
 DATA_DIR = "data"
@@ -17,9 +17,9 @@ SUMMARY_PATH = os.path.join(DATA_DIR, "summary.json")
 
 # LangChain agentek listája
 tools = [
-    Tool(name="SentimentAnalyzer", func=sentiment_tool),
-    Tool(name="BotDetector", func=bot_detection_tool),
-    Tool(name="Summarizer", func=reasoning_tool),
+    Tool(name="SentimentAnalyzer", func=analyze_sentiment),
+    Tool(name="BotDetector", func=detect_bots),
+    Tool(name="Summarizer", func=summarize_comments),
 ]
 
 # AgentExecutor létrehozása

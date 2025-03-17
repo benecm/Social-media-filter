@@ -35,7 +35,7 @@ def analyze():
 
         comments = get_youtube_comments(video_url)
         save_comments_to_json(comments)
-
+        #ehelyere kell vmit atrakni hogy mukodjon a teljes pipeline
         sentiment_analysis()
         #results = json.load('sentiment_results.json')
         try:

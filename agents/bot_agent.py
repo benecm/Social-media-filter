@@ -1,28 +1,21 @@
 import json
-from langchain.tools import tool
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
+import os
+from models.bot_detection_modell import detect_bots
 
-MODEL_NAME = "tdrenis/finetuned-bot-detector"
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+DATA_DIR = "data"
 
-@tool
-def detect_bots(input_path: str, output_path: str):
-    """Elemzi, hogy a kommentek botok által íródtak-e."""
+def bot_detection_tool(input_file):
+    input_path = os.path.join(DATA_DIR, input_file)
+
     with open(input_path, "r", encoding="utf-8") as f:
         comments = json.load(f)
+    
+    results = detect_bots(comments)
 
-    results = {}
-    for comment in comments:
-        inputs = tokenizer(comment, return_tensors="pt", padding=True, truncation=True)
-        outputs = model(**inputs)
-        probs = torch.nn.functional.softmax(outputs.logits, dim=-1)
-        bot_score = probs[0][1].item()
-        label = "bot" if bot_score > 0.5 else "human"
-        results[comment] = label
+    output_file = "bot_detection_results.json"
+    output_path = os.path.join(DATA_DIR, output_file)
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4)
     
-    return f"Bot detekció befejezve. Eredmény mentve: {output_path}"
+    return output_path

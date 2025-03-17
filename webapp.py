@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import json
 import re
 import pandas as pd
-from Functions import get_youtube_comments, sentiment_analysis,save_comments_to_json
+from research.Functions import get_youtube_comments, sentiment_analysis,save_comments_to_json
 from textblob import TextBlob
 
 #pelda link: https://www.youtube.com/watch?v=89LOsf8pDhY
@@ -35,7 +35,7 @@ def analyze():
 
         comments = get_youtube_comments(video_url)
         save_comments_to_json(comments)
-
+        #ehelyere kell vmit atrakni hogy mukodjon a teljes pipeline
         sentiment_analysis()
         #results = json.load('sentiment_results.json')
         try:

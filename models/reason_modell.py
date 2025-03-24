@@ -60,5 +60,5 @@ def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"
 
 # Teszt futtatás (csak akkor, ha közvetlenül futtatjuk ezt a scriptet)
 if __name__ == "__main__":
-    summarize_comments("data/sentiment.json", "data/bot_results.json")
+    summarize_comments("data/sentiment_results.json", "data/bot_detection_results.json")
     print("✅ Reasoning folyamat sikeresen lefutott!")

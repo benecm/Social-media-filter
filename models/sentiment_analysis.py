@@ -2,7 +2,7 @@ from textblob import TextBlob
 import json
 import pandas as pd
 
-def sentiment_analysis(filename="comments.json", output_filename="sentiment_results.json"):
+def sentiment_analysis(filename="data/comments.json", output_filename="data/sentiment_results.json"):
     try:
         with open(filename, "r", encoding="utf-8") as f:
             comments = json.load(f)
@@ -15,4 +15,10 @@ def sentiment_analysis(filename="comments.json", output_filename="sentiment_resu
     df["Sentiment"] = df["Polarity"].apply(lambda x: "Positive" if x > 0 else "Negative" if x < 0 else "Neutral")
     
     sentiment_results = df.to_dict(orient="records")
-    return sentiment_results
+    with open(output_filename, "w", encoding="utf-8") as f:
+        json.dump(sentiment_results, f, ensure_ascii=False, indent=4)
+    
+    print("Sentiment elemzés eredménye mentve:", output_filename)
+    
+
+sentiment_analysis()

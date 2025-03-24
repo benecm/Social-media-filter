@@ -16,22 +16,22 @@ def load_json(file_path):
 # Prompt generálás a Llama 3.2 számára
 def generate_prompt(comments, sentiment_results, bot_results):
     prompt = f"""
-    Elemezd a következő YouTube kommenteket és azok metaadatait:
-    - Milyen fő témák merülnek fel?
-    - Általánosságban pozitív, negatív vagy vegyes a hangulat?
-    - Mennyire hitelesek ezek a kommentek (bot detekció alapján)?
-    - Vannak-e visszatérő trendek vagy mintázatok?
+    Analyze the following YouTube comments and their metadata: 
+    - What are the main topics that emerge? 
+    - Is the overall sentiment positive, negative, or mixed? 
+    - How credible are these comments (based on bot detection)? 
+    - Are there any recurring trends or patterns?
     
-    Kommentek:
+    Comments:
     {comments}
 
-    Sentiment eredmények:
+    Sentiment analysis results:
     {sentiment_results}
 
-    Bot detektálási eredmények:
+    Bot detection results:
     {bot_results}
 
-    Kérlek, adj egy jól strukturált összegzést!
+    Please provide a well-structured summary!
     """
     return prompt
 
@@ -61,4 +61,4 @@ def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"
 # Teszt futtatás (csak akkor, ha közvetlenül futtatjuk ezt a scriptet)
 if __name__ == "__main__":
     summarize_comments("data/sentiment_results.json", "data/bot_detection_results.json")
-    print("✅ Reasoning folyamat sikeresen lefutott!")
+    print("Reasoning folyamat sikeresen lefutott!")

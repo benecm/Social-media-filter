@@ -2,9 +2,12 @@ import os
 import json
 from langchain.agents import initialize_agent, AgentType
 from langchain.tools import Tool
-from agents.sentiment_agent import analyze_sentiment
-from agents.bot_agent import detect_bots
-from agents.reasoning_agent import summarize_comments
+#from agents.sentiment_agent import analyze_sentiment
+from models.sentiment_analysis import sentiment_analysis as analyze_sentiment
+#from agents.bot_agent import detect_bots
+from models.bot_detection_modell import detect_bots
+#from agents.reasoning_agent import summarize_comments
+from models.reasoning import summarize_comments
 from langchain_ollama import ChatOllama
 
 # Adatmappa
@@ -53,7 +56,7 @@ agent_executor = initialize_agent(
     llm=llm,
     agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
     verbose=True,
-    handle_parsing_errors=True  # Az LLM válaszainak automatikus újrapróbálása hibás formátum esetén
+    handle_parsing_errors=False  # Az LLM válaszainak automatikus újrapróbálása hibás formátum esetén
 )
 
 def main():
@@ -67,10 +70,15 @@ def main():
 
     # Sentiment analízis futtatása
     try:
-        sentiment_result = agent_executor.invoke({"input": comments_data})
+        agent_executor.invoke({"input": comments_data})
+        sentiment_result = load_json(SENTIMENT_PATH)
         print("\nSentiment Analízis eredménye:", sentiment_result)
     except Exception as e:
         print("\nHiba történt a Sentiment Analízis során:", str(e))
+
+    # Sentiment eredmények mentése
+    #with open(SENTIMENT_PATH, 'w', encoding='utf-8') as f:
+        #json.dump(sentiment_result, f, ensure_ascii=False, indent=4)
 
     # Bot detekció futtatása
     try:
@@ -78,6 +86,10 @@ def main():
         print("\nBot Detekció eredménye:", bot_result)
     except Exception as e:
         print("\nHiba történt a Bot Detekció során:", str(e))
+
+    # Bot eredmények mentése
+    with open(BOT_RESULTS_PATH, 'w', encoding='utf-8') as f:
+        json.dump(bot_result, f, ensure_ascii=False, indent=4)
 
     # Eredmények beolvasása összegzéshez
     sentiment_data = load_json(SENTIMENT_PATH)
@@ -93,6 +105,10 @@ def main():
         print("\nÖsszegzés eredménye:", summary_result)
     except Exception as e:
         print("\nHiba történt az Összegzés során:", str(e))
+
+    # Összegzés mentése
+    with open(SUMMARY_PATH, 'w', encoding='utf-8') as f:
+        json.dump(summary_result, f, ensure_ascii=False, indent=4)
 
     print("\nMinden LangChain agent sikeresen lefutott!")
 

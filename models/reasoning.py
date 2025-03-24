@@ -16,35 +16,35 @@ def load_json(file_path):
 # Prompt generálás a Llama 3.2 számára
 def generate_prompt(comments, sentiment_results, bot_results):
     prompt = f"""
-    Elemezd a következő YouTube kommenteket és azok metaadatait:
-    - Milyen fő témák merülnek fel?
-    - Általánosságban pozitív, negatív vagy vegyes a hangulat?
-    - Mennyire hitelesek ezek a kommentek (bot detekció alapján)?
-    - Vannak-e visszatérő trendek vagy mintázatok?
+    Analyze the following YouTube comments and their metadata: 
+    - What are the main topics that emerge? 
+    - Is the overall sentiment positive, negative, or mixed? 
+    - How credible are these comments (based on bot detection)? 
+    - Are there any recurring trends or patterns?
     
-    Kommentek:
+    Comments:
     {comments}
 
-    Sentiment eredmények:
+    Sentiment analysis results:
     {sentiment_results}
 
-    Bot detektálási eredmények:
+    Bot detection results:
     {bot_results}
 
-    Kérlek, adj egy jól strukturált összegzést!
+    Please provide a well-structured summary!
     """
     return prompt
 
 # Ollama LLM hívása
 def query_llama3(prompt):
-    response = ollama.chat(model="llama3", messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(model="llama3.2", messages=[{"role": "user", "content": prompt}])
     return response["message"]["content"]
 
 # Eredmény mentése
 def save_summary(summary, output_path):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump({"summary": summary}, f, indent=4)
-    print(f"✅ Összegzés mentve: {output_path}")
+    print(f"Összegzés mentve: {output_path}")
 
 # Reasoning függvény agent számára
 def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"):
@@ -60,6 +60,6 @@ def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"
 
 #teszthez
 if __name__ == "__main__":
-    summarize_comments("data/sentiment.json", "data/bot_results.json")
-    print("✅ Reasoning folyamat sikeresen lefutott!")
+    summarize_comments("data/sentiment_results.json", "data/bot_detection_results.json")
+    print("Reasoning folyamat sikeresen lefutott!")
 

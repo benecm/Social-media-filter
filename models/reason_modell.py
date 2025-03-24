@@ -37,14 +37,14 @@ def generate_prompt(comments, sentiment_results, bot_results):
 
 # Ollama LLM hívása
 def query_llama3(prompt):
-    response = ollama.chat(model="llama3", messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(model="llama3.2", messages=[{"role": "user", "content": prompt}])
     return response["message"]["content"]
 
 # Eredmény mentése
 def save_summary(summary, output_path):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump({"summary": summary}, f, indent=4)
-    print(f"✅ Összegzés mentve: {output_path}")
+    print(f"Összegzés mentve: {output_path}")
 
 # Reasoning függvény agent számára
 def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"):

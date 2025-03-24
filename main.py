@@ -5,7 +5,7 @@ from langchain.agents import AgentType
 from agents.sentiment_agent import analyze_sentiment
 from agents.bot_agent import detect_bots
 from agents.reasoning_agent import summarize_comments
-
+import ollama
 
 # Adatmappa
 DATA_DIR = "data"
@@ -16,17 +16,33 @@ SENTIMENT_PATH = os.path.join(DATA_DIR, "sentiment.json")
 BOT_RESULTS_PATH = os.path.join(DATA_DIR, "bot_results.json")
 SUMMARY_PATH = os.path.join(DATA_DIR, "summary.json")
 
+#ollama start
+llm = ChatOllama(model="llama3")
+
 # LangChain agentek listája
 tools = [
-    Tool(name="SentimentAnalyzer", func=analyze_sentiment),
-    Tool(name="BotDetector", func=detect_bots),
-    Tool(name="Summarizer", func=summarize_comments),
+    Tool(
+        name="SentimentAnalyzer",
+        func=analyze_sentiment,
+        description="Elemzi a kommentek sentimentjét (pozitív, negatív, semleges)."
+    ),
+    Tool(
+        name="BotDetector",
+        func=detect_bots,
+        description="Meghatározza, hogy egy kommentet bot vagy ember írta-e."
+    ),
+    Tool(
+        name="Summarizer",
+        func=summarize_comments,
+        description="Összegzi a sentiment és bot detekció eredményeit, statisztikát adva."
+    ),
 ]
 
 # AgentExecutor létrehozása
 agent_executor = initialize_agent(
     tools=tools,
-    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,  # A LangChain egyik működési módja
+    llm=llm,  # Itt adjuk meg az LLM-et
+    agent="zero-shot-react-description",
     verbose=True
 )
 

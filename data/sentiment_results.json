@@ -2,18 +2,25 @@
     {
         "Comment": "Correction:\n5:07 - We incorrectly labeled the transistor count as millions instead of billions on both cards. We're working on fixing and replacing that bit.",
         "Polarity": 0.0,
-        "Sentiment": "Neutral"
+        "Sentiment": "Neutral",
+        "bot_status": 0
     },
     {
         "Comment": "His video has been out for 2 weeks and AMD is supposedly been sending out and creating GPUs but I ain't seeing shit! I see more 5070 TIs than anything.",
         "Polarity": 0.125,
-        "Sentiment": "Positive"
+        "Sentiment": "Positive",
+        "bot_status": 0
     },
     {
         "Comment": "so i shouldn't have bought a 5070 as my first GPU ever?",
         "Polarity": 0.25,
-        "Sentiment": "Positive"
-    },
+        "Sentiment": "Positive",
+        "bot_status": 0
+    }
+]
+
+
+
     {
         "Comment": "God, I'm still using gtx 1070 in SLI. About damn time AMD",
         "Polarity": 0.0,

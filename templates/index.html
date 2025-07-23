@@ -4,63 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Komment Elemzés</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            padding: 1.5em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #1877f2;
+        }
+        main {
+            padding: 2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+        label {
+            display: block;
+            margin-bottom: .5em;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: .8em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1877f2;
+            color: #fff;
+            padding: .8em 1.5em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #166fe5;
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #1877f2;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 2em auto;
+            display: none;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #results {
+            margin-top: 2em;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 1em;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: .8em;
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #f7f7f7;
+        }
+        #summary {
+            background-color: #e7f3ff;
+            padding: 1em;
+            border-left: 4px solid #1877f2;
+            margin-bottom: 2em;
         }
     </style>
+</head>
+<body>
+    <header>
+        <h1>YouTube Komment Elemző</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-group">
+                <label for="video_url">YouTube Videó URL</label>
+                <input type="text" id="video_url" placeholder="pl. https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            </div>
+            <div class="form-group">
+                <label for="comment_count">Kommentek száma (opcionális)</label>
+                <input type="number" id="comment_count" placeholder="Hagyja üresen az összes kommenthez">
+            </div>
+            <button onclick="analyzeVideo()">Elemzés</button>
+            <button onclick="generateDiagram()">Diagram</button>
+            <div id="loader" class="loader"></div>
+            <div id="results">
+                <div id="summary"></div>
+                <canvas id="sentimentChart" width="400" height="200"></canvas>
+                <div id="sentiment"></div>
+            </div>
+        </div>
+    </main>
+
     <script>
         async function analyzeVideo() {
             const videoUrl = document.getElementById("video_url").value;
+            const commentCount = document.getElementById("comment_count").value;
             if (!videoUrl) {
-                alert("Adj meg egy YouTube linket!");
+                alert("Kérlek, adj meg egy YouTube videó URL-t.");
                 return;
             }
+
+            document.getElementById("loader").style.display = "block";
+            document.getElementById("results").style.display = "none";
 
             const response = await fetch("/analyze", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ video_url: videoUrl })
+                body: JSON.stringify({ video_url: videoUrl, comment_count: parseInt(commentCount) || null })
             });
 
-            const result = await response.json();
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("results").style.display = "block";
 
+            if (response.ok) {
+                const result = await response.json();
+                displayResults(result);
+            } else {
+                const error = await response.json();
+                alert(`Hiba: ${error.error}`);
+            }
+        }
+
+        async function generateDiagram() {
+            document.getElementById("loader").style.display = "block";
+            const response = await fetch("/diagram");
+            document.getElementById("loader").style.display = "none";
+
+            if (response.ok) {
+                const imageBlob = await response.blob();
+                const imageUrl = URL.createObjectURL(imageBlob);
+                const image = new Image();
+                image.src = imageUrl;
+
+                const chartContainer = document.getElementById("sentiment");
+                chartContainer.innerHTML = ''; // Clear previous content
+                chartContainer.appendChild(image);
+            } else {
+                const error = await response.json();
+                alert(`Hiba a diagram generálásakor: ${error.error}`);
+            }
+        }
+
+        function displayResults(result) {
             const summaryContainer = document.getElementById("summary");
-            summaryContainer.innerHTML = `<h2>Összegzés</h2><pre>${JSON.stringify(result.summary, null, 2)}</pre>`;
+            summaryContainer.innerHTML = `<h3>Összegzés</h3><p>Összesen ${result.summary.total_comments} komment. Pozitív: ${result.summary.positive_comments}, Negatív: ${result.summary.negative_comments}, Semleges: ${result.summary.neutral_comments}</p>`;
 
             const sentimentContainer = document.getElementById("sentiment");
-            let sentimentTable = "<h2>Sentiment Elemzés</h2><table><tr><th>Komment</th><th>Eredmény</th></tr>";
-            for (const comment in result.sentiment) {
-                sentimentTable += `<tr><td>${comment}</td><td>${result.sentiment[comment]}</td></tr>`;
-            }
-            sentimentTable += "</table>";
-            sentimentContainer.innerHTML = sentimentTable;
+            let table = '<h3>Sentiment Elemzés</h3><table class="table table-striped"><thead><tr><th>Komment</th><th>Polaritás</th><th>Érzés</th></tr></thead><tbody>';
+            result.sentiment.forEach(item => {
+                table += `<tr><td>${item.Comment}</td><td>${item.Polarity.toFixed(2)}</td><td>${item.Sentiment}</td></tr>`;
+            });
+            table += '</tbody></table>';
+            sentimentContainer.innerHTML = table;
 
-            const botContainer = document.getElementById("bots");
-            let botTable = "<h2>Bot Detekció</h2><table><tr><th>Komment</th><th>Eredmény</th></tr>";
-            for (const comment in result.bots) {
-                botTable += `<tr><td>${comment}</td><td>${result.bots[comment]}</td></tr>`;
-            }
-            botTable += "</table>";
-            botContainer.innerHTML = botTable;
+            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Pozitív', 'Negatív', 'Semleges'],
+                    datasets: [{
+                        label: 'Kommentek megoszlása',
+                        data: [result.summary.positive_comments, result.summary.negative_comments, result.summary.neutral_comments],
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.7)',
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(201, 203, 207, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(201, 203, 207, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Kommentek Érzelmi Megoszlása'
+                        }
+                    }
+                }
+            });
         }
     </script>
-</head>
-<body>
-    <h1>YouTube Komment Elemzés</h1>
-    <input type="text" id="video_url" placeholder="YouTube videó link">
-    <button onclick="analyzeVideo()">Elemzés indítása</button>
-    <div id="summary"></div>
-    <div id="sentiment"></div>
-    <div id="bots"></div>
 </body>
 </html>

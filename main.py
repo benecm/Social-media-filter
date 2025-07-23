@@ -1,14 +1,7 @@
 import os
 import json
-from langchain.agents import initialize_agent, AgentType
-from langchain.tools import Tool
-#from agents.sentiment_agent import analyze_sentiment
 from models.sentiment_analysis import sentiment_analysis as analyze_sentiment
-#from agents.bot_agent import detect_bots
-# from models.bot_detection_modell import detect_bots
-#from agents.reasoning_agent import summarize_comments
 from models.reasoning import summarize_comments
-# from langchain_ollama import ChatOllama
 import json
 import os
 
@@ -18,11 +11,7 @@ DATA_DIR = "data"
 # Fájl elérési utak FRISSÍTVE
 COMMENTS_PATH = os.path.join(DATA_DIR, "comments.json")
 SENTIMENT_PATH = os.path.join(DATA_DIR, "sentiment_results.json")
-BOT_RESULTS_PATH = os.path.join(DATA_DIR, "bot_detection_results.json")
 SUMMARY_PATH = os.path.join(DATA_DIR, "summary.json")
-
-# # Ollama LLM inicializálása - NYELVI KORLÁTOZÁSSAL
-# llm = ChatOllama(model="llama3.2", system="Respond in English only.")
 
 # JSON fájlok beolvasására szolgáló függvény
 def load_json(filepath):
@@ -63,7 +52,7 @@ def run_analysis():
 
     # Reasoning (összegzés) futtatása
     print("Running summarization...")
-    summary_result = summarize_comments(SENTIMENT_PATH, BOT_RESULTS_PATH) # bot results path is not used
+    summary_result = summarize_comments(SENTIMENT_PATH) # bot results path is not used
     print("\nÖsszegzés eredménye:", summary_result)
     print("Summarization finished.")
 

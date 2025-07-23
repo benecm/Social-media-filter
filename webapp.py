@@ -1,67 +1,66 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, jsonify, send_file
 import json
-import re
-import pandas as pd
-from research.Functions import get_youtube_comments, save_comments_to_json
-from textblob import TextBlob
-from main import run_analysis
 import os
-
-#pelda link: https://www.youtube.com/watch?v=89LOsf8pDhY
+from research.Functions import get_youtube_comments, save_comments_to_json
+from models.sentiment_analysis import sentiment_analysis
+from models.reasoning import summarize_comments
+from diagram import generate_diagram
 
 app = Flask(__name__)
-"""
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    if request.method == 'POST':
-        video_url = request.form['video_url']
-        api_key = request.form['api_key']
-        comments = get_youtube_comments(video_url, api_key)
-        save_comments_to_json(comments)
-        results = sentiment_analysis()
-        return jsonify(results)
-    return render_template('index.html')
-"""
+
 @app.route("/")
 def index():
-    return render_template("index.html")  # Ez megnyitja az index.html-t
+    return render_template("index.html")
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
     try:
         data = request.get_json()
         video_url = data.get("video_url")
+        comment_count = data.get("comment_count")
 
         if not video_url:
             return jsonify({"error": "Nincs megadva YouTube link!"}), 400
 
-        comments = get_youtube_comments(video_url)
-        save_comments_to_json(comments, os.path.join("data", "comments.json"))
+        if comment_count:
+            comments = get_youtube_comments(video_url, max_results=comment_count)
+        else:
+            comments = get_youtube_comments(video_url)
+        
+        comments_path = os.path.join("data", "comments.json")
+        sentiment_results_path = os.path.join("data", "sentiment_results.json")
+        summary_path = os.path.join("data", "summary.json")
 
-        run_analysis()
+        save_comments_to_json(comments, comments_path)
+        
+        sentiment_analysis(comments_path, sentiment_results_path)
+        summary = summarize_comments(sentiment_results_path)
 
-        # Eredmények beolvasása
-        with open(os.path.join("data", "sentiment_results.json"), "r", encoding="utf-8") as f:
+        with open(sentiment_results_path, "r", encoding="utf-8") as f:
             sentiment_results = json.load(f)
 
-        # with open(os.path.join("data", "bot_detection_results.json"), "r", encoding="utf-8") as f:
-        #     bot_results = json.load(f)
-
-        with open(os.path.join("data", "summary.json"), "r", encoding="utf-8") as f:
-            summary = json.load(f)
+        with open(summary_path, "w", encoding="utf-8") as f:
+            json.dump(summary, f, ensure_ascii=False, indent=4)
 
         return jsonify({
             "sentiment": sentiment_results,
-            "bots": {},
             "summary": summary
         })
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
-
-
+@app.route("/diagram")
+def diagram():
+    try:
+        data_path = os.path.join('data', 'sentiment_results.json')
+        output_path = os.path.join('static', 'sentiment_diagram.png')
+        if not os.path.exists('static'):
+            os.makedirs('static')
+        generate_diagram(data_path, output_path)
+        return send_file(output_path, mimetype='image/png')
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

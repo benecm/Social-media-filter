@@ -14,7 +14,7 @@ def load_json(file_path):
         return json.load(f)
 
 # Reasoning függvény agent számára
-def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"):
+def summarize_comments(sentiment_path, output_path="data/summary.json"):
     sentiment_results = load_json(sentiment_path)
     
     # Simple summary based on sentiment results
@@ -29,7 +29,7 @@ def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"
             negative_count += 1
         else:
             neutral_count += 1
-
+            
     summary = {
         "total_comments": len(sentiment_results),
         "positive_comments": positive_count,
@@ -41,7 +41,6 @@ def summarize_comments(sentiment_path, bot_path, output_path="data/summary.json"
 
 #teszthez
 if __name__ == "__main__":
-    summary = summarize_comments("data/sentiment_results.json", "data/bot_detection_results.json")
+    summary = summarize_comments("data/sentiment_results.json")
     print("Reasoning folyamat sikeresen lefutott!")
     print("Summary:", summary)
-

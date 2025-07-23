@@ -12,45 +12,42 @@ def extract_video_id(video_url):
     match = re.search(r"(?:v=|\/)([0-9A-Za-z_-]{11})", video_url)
     return match.group(1) if match else None
 
-def get_youtube_comments(video_url, api_key='AIzaSyCYzkS4z6JBJ8fkvsSiLIJdTGj83URNNRc'):
+def get_youtube_comments(video_url, api_key='AIzaSyCYzkS4z6JBJ8fkvsSiLIJdTGj83URNNRc', max_results=100):
     video_id = extract_video_id(video_url)
     if not video_id:
         print("Érvénytelen YouTube link!")
         return []
-    
-    youtube = build("youtube", "v3", developerKey=api_key) #api kapcsolat letrehozasa
+
+    youtube = build("youtube", "v3", developerKey=api_key)
     comments = []
     
-    request = youtube.commentThreads().list(    #elsodleges kommenteket kerjuk le
-        part="snippet",         #kommentekhez tartozo reszletek
-        videoId=video_id,       #video kivalasztasa
-        textFormat="plainText", #szovegkent kapjuk vissza nem htmlben
-        maxResults=10000        #lekert kommentek szama
+    request = youtube.commentThreads().list(
+        part="snippet",
+        videoId=video_id,
+        textFormat="plainText",
+        maxResults=min(int(max_results), 10000)  # Biztonsági ellenőrzés
     )
-    #a request egy JSON file, az alabbi fugveny bejarja es kiirja teszt jelleggel
-    while request:
+
+    while request and len(comments) < int(max_results):
         response = request.execute()
         for item in response.get("items", []):
             comment = item["snippet"]["topLevelComment"]["snippet"]["textDisplay"]
             comments.append(comment)
+            if len(comments) >= int(max_results):
+                break
         
+        if len(comments) >= int(max_results):
+            break
+
         request = youtube.commentThreads().list_next(request, response)
     
     return comments
 
 #kapott kommenteket kimenti json-be, ha mar letzik hozzafuzi
 def save_comments_to_json(comments, filename="comments.json"):
-    try:
-        with open(filename, "r", encoding="utf-8") as f:
-            existing_comments = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        existing_comments = []
-    
-    existing_comments.extend(comments)
-    
     with open(filename, "w", encoding="utf-8") as f:
-        json.dump(existing_comments, f, ensure_ascii=False, indent=4)
-    print(f"Kommentek hozzáfűzve: {filename}")
+        json.dump(comments, f, ensure_ascii=False, indent=4)
+    print(f"Kommentek mentve: {filename}")
 
 def analyze_comments(filename="comments.json"):
     try:

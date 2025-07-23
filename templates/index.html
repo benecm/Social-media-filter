@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Komment Elemzés</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
     <script>
         async function analyzeVideo() {
             const videoUrl = document.getElementById("video_url").value;
@@ -19,7 +33,25 @@
             });
 
             const result = await response.json();
-            document.getElementById("result").innerText = JSON.stringify(result, null, 2);
+
+            const summaryContainer = document.getElementById("summary");
+            summaryContainer.innerHTML = `<h2>Összegzés</h2><pre>${JSON.stringify(result.summary, null, 2)}</pre>`;
+
+            const sentimentContainer = document.getElementById("sentiment");
+            let sentimentTable = "<h2>Sentiment Elemzés</h2><table><tr><th>Komment</th><th>Eredmény</th></tr>";
+            for (const comment in result.sentiment) {
+                sentimentTable += `<tr><td>${comment}</td><td>${result.sentiment[comment]}</td></tr>`;
+            }
+            sentimentTable += "</table>";
+            sentimentContainer.innerHTML = sentimentTable;
+
+            const botContainer = document.getElementById("bots");
+            let botTable = "<h2>Bot Detekció</h2><table><tr><th>Komment</th><th>Eredmény</th></tr>";
+            for (const comment in result.bots) {
+                botTable += `<tr><td>${comment}</td><td>${result.bots[comment]}</td></tr>`;
+            }
+            botTable += "</table>";
+            botContainer.innerHTML = botTable;
         }
     </script>
 </head>
@@ -27,6 +59,8 @@
     <h1>YouTube Komment Elemzés</h1>
     <input type="text" id="video_url" placeholder="YouTube videó link">
     <button onclick="analyzeVideo()">Elemzés indítása</button>
-    <pre id="result"></pre>
+    <div id="summary"></div>
+    <div id="sentiment"></div>
+    <div id="bots"></div>
 </body>
 </html>

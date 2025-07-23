@@ -2,8 +2,10 @@ from flask import Flask, request, render_template, jsonify
 import json
 import re
 import pandas as pd
-from research.Functions import get_youtube_comments, sentiment_analysis,save_comments_to_json
+from research.Functions import get_youtube_comments, save_comments_to_json
 from textblob import TextBlob
+from main import run_analysis
+import os
 
 #pelda link: https://www.youtube.com/watch?v=89LOsf8pDhY
 
@@ -34,16 +36,25 @@ def analyze():
             return jsonify({"error": "Nincs megadva YouTube link!"}), 400
 
         comments = get_youtube_comments(video_url)
-        save_comments_to_json(comments)
-        #ehelyere kell vmit atrakni hogy mukodjon a teljes pipeline
-        sentiment_analysis()
-        #results = json.load('sentiment_results.json')
-        try:
-            with open('sentiment_results.json', "r", encoding="utf-8") as f:
-                results = json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError):
-            print("Nem található megfelelő JSON fájl!")
-        return jsonify(results)
+        save_comments_to_json(comments, os.path.join("data", "comments.json"))
+
+        run_analysis()
+
+        # Eredmények beolvasása
+        with open(os.path.join("data", "sentiment_results.json"), "r", encoding="utf-8") as f:
+            sentiment_results = json.load(f)
+
+        # with open(os.path.join("data", "bot_detection_results.json"), "r", encoding="utf-8") as f:
+        #     bot_results = json.load(f)
+
+        with open(os.path.join("data", "summary.json"), "r", encoding="utf-8") as f:
+            summary = json.load(f)
+
+        return jsonify({
+            "sentiment": sentiment_results,
+            "bots": {},
+            "summary": summary
+        })
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

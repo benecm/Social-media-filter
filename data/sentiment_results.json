@@ -2,25 +2,18 @@
     {
         "Comment": "Correction:\n5:07 - We incorrectly labeled the transistor count as millions instead of billions on both cards. We're working on fixing and replacing that bit.",
         "Polarity": 0.0,
-        "Sentiment": "Neutral",
-        "bot_status": 0
+        "Sentiment": "Neutral"
     },
     {
         "Comment": "His video has been out for 2 weeks and AMD is supposedly been sending out and creating GPUs but I ain't seeing shit! I see more 5070 TIs than anything.",
         "Polarity": 0.125,
-        "Sentiment": "Positive",
-        "bot_status": 0
+        "Sentiment": "Positive"
     },
     {
         "Comment": "so i shouldn't have bought a 5070 as my first GPU ever?",
         "Polarity": 0.25,
-        "Sentiment": "Positive",
-        "bot_status": 0
-    }
-]
-
-
-
+        "Sentiment": "Positive"
+    },
     {
         "Comment": "God, I'm still using gtx 1070 in SLI. About damn time AMD",
         "Polarity": 0.0,
@@ -513,7 +506,7 @@
     },
     {
         "Comment": "Did you hear that they uplift the price, because of the huge interest",
-        "Polarity": 0.4000000000000001,
+        "Polarity": 0.39999999999999997,
         "Sentiment": "Positive"
     },
     {
@@ -623,7 +616,7 @@
     },
     {
         "Comment": "The surprising part is that the 7900XTX is still bad ass. I would say, that is the clear winner, shame the prices went up and low stocks. RAW Graphics have always been better than all the crapo enhancements. AT least that's what I saw on the games I play.",
-        "Polarity": 0.00989010989010991,
+        "Polarity": 0.009890109890109902,
         "Sentiment": "Positive"
     },
     {
@@ -838,7 +831,7 @@
     },
     {
         "Comment": "In russia these are double the price, in my region 9700xt is 99000rubles ~ 1000$ so my dreams about new rig to replace the old friend of mine with gtx 960 are gone\nHope the price will go down soon if it will at all",
-        "Polarity": 0.020202020202020193,
+        "Polarity": 0.0202020202020202,
         "Sentiment": "Positive"
     },
     {
@@ -933,7 +926,7 @@
     },
     {
         "Comment": "I think that I'm not alone in this but... WHO CARES ANYMORE! WE CAN'T BUY ONE AND OR GET IT AT A REASONABLE PRICE. ALL THE GPU'S ARE BOUGHT AND SOLD DOUBLE THE VALUE. ITS A HUGE SCAM! GPU SCALPERS ARE PARASITES",
-        "Polarity": 0.2333333333333334,
+        "Polarity": 0.2333333333333333,
         "Sentiment": "Positive"
     },
     {
@@ -963,7 +956,7 @@
     },
     {
         "Comment": "16GB of vram is absolut bullshit and not meant for the future. i don't get the hype around this 9070 card at all. 16GB suck, it has the same performance liek the equally expensive 7900, but the 7900 comes in a 24GB flavor. Both are equally strong in multiple games tested. There is absolutely NO POINT in buying a 9070.. none! waiting for the 9090xxxxtttxxxxxx pro oc mega card with 32 GB Ram. Don't see AMD back yet... Time to make 20+GB RAM the absolute minimum for future cards..",
-        "Polarity": 0.0009259259259259226,
+        "Polarity": 0.0009259259259259288,
         "Sentiment": "Positive"
     },
     {
@@ -1563,7 +1556,7 @@
     },
     {
         "Comment": "I have my Asus Prime RX 9070 tomorrow (Sat 8th), upgrade from RX 6700 XT.. It will be a huge upgrade..",
-        "Polarity": 0.4000000000000001,
+        "Polarity": 0.39999999999999997,
         "Sentiment": "Positive"
     },
     {
@@ -1853,7 +1846,7 @@
     },
     {
         "Comment": "The clear winner: RTX 3080 from 2020 for 800€, I'm not upgrading any time soon seeing all these prices and performance/price ratio .",
-        "Polarity": 0.10000000000000002,
+        "Polarity": 0.09999999999999999,
         "Sentiment": "Positive"
     },
     {
@@ -1993,7 +1986,7 @@
     },
     {
         "Comment": "Could you guys provide the 3060 at the bottom of your graphs? Considering (as of right now and for a while) it is the most common card on the steam hardware survey it would make a lot of sense. Me and probably many others who has the 3060 would benefit HUGELY from seeing how good these cards are in comparison to something we actually have.",
-        "Polarity": 0.2979591836734694,
+        "Polarity": 0.29795918367346935,
         "Sentiment": "Positive"
     },
     {
@@ -2633,7 +2626,7 @@
     },
     {
         "Comment": "Upgrading from a 3070 to a 9070 XT. Looking at the charts its a huge upgrade.",
-        "Polarity": 0.4000000000000001,
+        "Polarity": 0.39999999999999997,
         "Sentiment": "Positive"
     },
     {
@@ -2803,7 +2796,7 @@
     },
     {
         "Comment": "AMD losing in AI is a huge W for gamers because AI companies wont hoard the cards for themselves. The market share will stay with gamers especially the impressive raster performance.",
-        "Polarity": 0.46666666666666673,
+        "Polarity": 0.4666666666666666,
         "Sentiment": "Positive"
     },
     {
@@ -2993,8 +2986,8 @@
     },
     {
         "Comment": "If the 32 GB version has two HDMI ports, then it's a clear yes from me... if not, then no thanks.",
-        "Polarity": 6.938893903907228e-18,
-        "Sentiment": "Positive"
+        "Polarity": -6.938893903907228e-18,
+        "Sentiment": "Negative"
     },
     {
         "Comment": "They just hit the shelves in Australia :  9070 at approx $1100 aud and 9070 xt at arouind 1350.   Not sure where the $250 mark up comes from with a $50 usd RRP difference.   \n\n$330 australia or AIB (or both) tax on the 9070 and a $400 australia tax on the xt.  \n\nModern and AAA PC Gaming is dead to me.",
@@ -3593,7 +3586,7 @@
     },
     {
         "Comment": "These two duopolies need to unify gaming, it's an absolute scam that AMD has hardly any game compatibility for FSR4 compared to NVIDIA's DLSS 4. The gaming chart comparisons are completely faked with completely different set of game engines and games compared to NVIDIA. AMD's non gaming creative use is shocking also with Blender taking forever to render compared to NVIDIA. Though look on the bright side at least 8 pin power connectors do not burn your house down. All in all the gaming graphics card industry is an absolute disgrace especially when legit consumers having to wait years for a graphics card which none are available for MSRP and sale due to scalpers and inflation.",
-        "Polarity": -0.03814814814814815,
+        "Polarity": -0.03814814814814814,
         "Sentiment": "Negative"
     },
     {
@@ -3653,7 +3646,7 @@
     },
     {
         "Comment": "I will buy the RX 9070 because it is still a HUGE improvement over my RX 6600XT",
-        "Polarity": 0.4000000000000001,
+        "Polarity": 0.39999999999999997,
         "Sentiment": "Positive"
     },
     {
@@ -4238,12 +4231,12 @@
     },
     {
         "Comment": "The very cheapest 5070Ti I can buy in the EU near me sells at 1269 euro. Thanks but no thanks. They can keep their slight ray tracing performance edge for that price. I wonder why they even bother publishing MSRP's that are clearly not in line with reality.",
-        "Polarity": 0.030555555555555558,
+        "Polarity": 0.03055555555555556,
         "Sentiment": "Positive"
     },
     {
         "Comment": "I'm happy for AMD. It took them like twenty years, but they actually win their bracket without the usual caveats and creative narrative you have to throw in to keep them in the game. That's huge. This is a massive breakthrough for them. Now I do wish they had took the hit and dropped the price on the 9070 to about $400, but that's just me wishing they had some interest in market share.\n\nEdit: I prefer Nvidia, historically I've had my issues with AMD and Radeon just on stability and I work 50-60 hour weeks, I don't have time to tinker so I tend to stick to Intel/Nvidia based systems. BUT I want AMD to be pushing them. Nvidia has for years only had to compete with itself, now finally they have to look at AMD and go okay, they aren't a threat to us today because they can't figure out that demand does play a role in pricing, but if AMD next series comes at them again, and decides to take a hit to get market share for once? Then that's real trouble.",
-        "Polarity": 0.15769230769230774,
+        "Polarity": 0.1576923076923077,
         "Sentiment": "Positive"
     },
     {
@@ -4548,7 +4541,7 @@
     },
     {
         "Comment": "I still rock my gtx 970… 13 years strong baby!",
-        "Polarity": 0.5416666666666666,
+        "Polarity": 0.5416666666666667,
         "Sentiment": "Positive"
     },
     {
@@ -5158,7 +5151,7 @@
     },
     {
         "Comment": "I have one and it clearly under performs on UE5 games … with a lot of crash …\nThe question is : is the 9070XT is futur proof ?",
-        "Polarity": 0.10000000000000002,
+        "Polarity": 0.09999999999999999,
         "Sentiment": "Positive"
     },
     {
@@ -5548,7 +5541,7 @@
     },
     {
         "Comment": "So.... Down the line, could there be a RX 9090 XTX ?",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -5578,7 +5571,7 @@
     },
     {
         "Comment": "Do not forget that if Nvidia put's the prices down. Appreciate AMD for  letting that happen.",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -6113,7 +6106,7 @@
     },
     {
         "Comment": "No matter how y'all try to sugar coat this NVIDIA still dominates with their newer cards regardless of the price. AI is going to play a huge role in gaming and that's a fact. AMD better start integrating that before it's donzo for them just like how Apple is falling behind in AI.",
-        "Polarity": 0.1666666666666667,
+        "Polarity": 0.16666666666666663,
         "Sentiment": "Positive"
     },
     {
@@ -6813,7 +6806,7 @@
     },
     {
         "Comment": "Slipped on a banana: 5090 Launch + melting cables\nFell down an elevator shaft: 5080 70 Ti launch + no stock\nGetting hit by a piano: 5070 launch",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -6978,7 +6971,7 @@
     },
     {
         "Comment": "I can’t watch ltt videos anymore, the new formatting and there’s a lot of talking over the same points again and again, just like the rant about afmf2, you already made clear it’s not great at current state, no need to keep ranting, I’ve been subscribed for so long but now I see j2c and gn doing a better job on giving me the information I need without a roundabout of unnecessary talking, llt is no longer a tech channel it’s just a entertainment channel at this point",
-        "Polarity": -0.014204545454545456,
+        "Polarity": -0.014204545454545463,
         "Sentiment": "Negative"
     },
     {
@@ -7378,7 +7371,7 @@
     },
     {
         "Comment": "AMD finally figured out how to make and price a GPU. All it took was years of failure, Nvidia's biggest screw up since the 20 series, and literally the entire tech media apparatus telling them to not fuck it up.",
-        "Polarity": -0.029166666666666674,
+        "Polarity": -0.02916666666666666,
         "Sentiment": "Negative"
     },
     {
@@ -7423,7 +7416,7 @@
     },
     {
         "Comment": "The lack of even the option for a 24GB card in this gen is a huge bummer.",
-        "Polarity": 0.4000000000000001,
+        "Polarity": 0.39999999999999997,
         "Sentiment": "Positive"
     },
     {
@@ -7548,7 +7541,7 @@
     },
     {
         "Comment": "Yeah, I'm gonna sit on my 3080 for a while...\nI'm hoping that there's some market correction in the coming year or so & prices come down.",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -8108,7 +8101,7 @@
     },
     {
         "Comment": "I would like to see cards all the way down to 1080ti on the charts still",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -8413,7 +8406,7 @@
     },
     {
         "Comment": "my 3080 standing strong  seems im skipping another generation",
-        "Polarity": 0.4333333333333333,
+        "Polarity": 0.43333333333333335,
         "Sentiment": "Positive"
     },
     {
@@ -8453,7 +8446,7 @@
     },
     {
         "Comment": "AMD not capable of providing even a basic level of productivity in the most important technology of modern times, AI, is just sad.\nNot even casual AI use cases you would encounter every day run smoothly on AMD compared to NVidia.",
-        "Polarity": 0.04999999999999999,
+        "Polarity": 0.05,
         "Sentiment": "Positive"
     },
     {
@@ -9523,7 +9516,7 @@
     },
     {
         "Comment": "As a console lover, the implications are huge. Long live AMD.",
-        "Polarity": 0.16212121212121214,
+        "Polarity": 0.1621212121212121,
         "Sentiment": "Positive"
     },
     {
@@ -9653,7 +9646,7 @@
     },
     {
         "Comment": "I only use raytacing, so I'm staying the clear winner, Nvidia.",
-        "Polarity": 0.05000000000000001,
+        "Polarity": 0.049999999999999996,
         "Sentiment": "Positive"
     },
     {
@@ -9868,7 +9861,7 @@
     },
     {
         "Comment": "This will clearly be a cash grab from AMD.",
-        "Polarity": 0.10000000000000002,
+        "Polarity": 0.09999999999999999,
         "Sentiment": "Positive"
     },
     {
@@ -9918,7 +9911,7 @@
     },
     {
         "Comment": "The non XT won't come down in price, the XT will *increase*",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -10008,7 +10001,7 @@
     },
     {
         "Comment": "That 9070 non-XT hopefully will come down in price. A lot of reasons to like it such as lower power draw and smaller size.",
-        "Polarity": -0.051851851851851864,
+        "Polarity": -0.05185185185185185,
         "Sentiment": "Negative"
     },
     {
@@ -10593,7 +10586,7 @@
     },
     {
         "Comment": "Currently rocking a rx 6600xt, I should probably upgrade but will also need a new power supply. Maybe if/when prices go down.",
-        "Polarity": -0.006397306397306411,
+        "Polarity": -0.0063973063973064015,
         "Sentiment": "Negative"
     },
     {
@@ -10648,7 +10641,7 @@
     },
     {
         "Comment": "I need this, my rx 6600 has been begging to be put down with the games I've been trying to play",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -10728,7 +10721,7 @@
     },
     {
         "Comment": "Clown show everytime someone includes Ray Tracing as a Benchmark.  Look this card gets 26 frames while this one only gets 16.  Clearly the one that loses everywhere but raytracing is a good card.  Ray Tracing is unplayable in either case.",
-        "Polarity": 0.019999999999999997,
+        "Polarity": 0.019999999999999983,
         "Sentiment": "Positive"
     },
     {
@@ -10848,7 +10841,7 @@
     },
     {
         "Comment": "Crazy how we are programmed to think that 600usd is a good price for a mid tier gpu? Too expensive… gtx 10 series holding up strong over here🤡",
-        "Polarity": 0.1333333333333333,
+        "Polarity": 0.13333333333333333,
         "Sentiment": "Positive"
     },
     {
@@ -10943,7 +10936,7 @@
     },
     {
         "Comment": "i wish there was a CUDA alternative that people actually used, so i could actually do casual AI stuff and dev",
-        "Polarity": -0.25000000000000006,
+        "Polarity": -0.25,
         "Sentiment": "Negative"
     },
     {
@@ -11363,7 +11356,7 @@
     },
     {
         "Comment": "I will stick with my eBay 6700 XT reference card with bykski water block that cost me less than $200 3 years ago and hasn't let me down yet. I am done getting ripped off buying the next new pc thing when it comes out. 😂",
-        "Polarity": -0.04646464646464647,
+        "Polarity": -0.04646464646464646,
         "Sentiment": "Negative"
     },
     {
@@ -11378,7 +11371,7 @@
     },
     {
         "Comment": "That RX 7900 XTX still going strong 🦾",
-        "Polarity": 0.4333333333333333,
+        "Polarity": 0.43333333333333335,
         "Sentiment": "Positive"
     },
     {
@@ -11883,7 +11876,7 @@
     },
     {
         "Comment": "Makes you realise the 9080 and 9090 xt models being missing are a huge L.",
-        "Polarity": 0.10000000000000003,
+        "Polarity": 0.09999999999999998,
         "Sentiment": "Positive"
     },
     {
@@ -12528,7 +12521,7 @@
     },
     {
         "Comment": "Victory of the losers.\nSo sad.\nTo reset this market you need to STOP BUYING those hugely overpriced cards at NON-msrp prices.\nThat's the only way.",
-        "Polarity": -0.07499999999999997,
+        "Polarity": -0.075,
         "Sentiment": "Negative"
     },
     {
@@ -12723,7 +12716,7 @@
     },
     {
         "Comment": "Whelp, gonna keep my RX6600XT for a while yet.\nNow, I'd like to see a performance comparaison for Black Myth: Wukong on Linux where the AMD Mesa driver has made huge strides recently - I wouldn't be surprised if its performance numbers eclipsed that of Windows...",
-        "Polarity": 0.08333333333333336,
+        "Polarity": 0.08333333333333333,
         "Sentiment": "Positive"
     },
     {
@@ -12738,7 +12731,7 @@
     },
     {
         "Comment": "Seeing as 4 generations is a good time to upgrade you could do far worse than the 9070 or the 9070xt.  These also don't require a whole new PSU for that nonsensical 12v HPWR crap Nvidia is pushing.  4000 series is still a better option than the 5000 series if you can grab 1 for decent price.  Don't encourage scalpers and shop only retial locations online or brick and Mortar, do not use Ebay, Amazon, Jawa or any other place that allows scalpers to inflate prices.  Best is to wait a few months till everything simmers down.",
-        "Polarity": 0.08634421134421132,
+        "Polarity": 0.08634421134421134,
         "Sentiment": "Positive"
     },
     {
@@ -13283,7 +13276,7 @@
     },
     {
         "Comment": "reminds me of the RX 480 all over again. it was a great 1080P graphics card from AMD at a really good price, then the 580 came along, restricted supplies and slight price increase reduced its impact.) then AMD fell off again trying to compete in the 6,7 series which didn't go well. Hopefully AMD notices this pattern now and can keep doing this on next generations which will push NVIDIA to take the mid/lower market more seriously and in theory drag down the high end cards to be more aligned.",
-        "Polarity": 0.19044444444444442,
+        "Polarity": 0.19044444444444444,
         "Sentiment": "Positive"
     },
     {
@@ -13603,7 +13596,7 @@
     },
     {
         "Comment": "I think I'll stick with my 7900 XTX for the moment. I like my 24 GB VRAM and there's not enough of a performance boost here. The ray tracing improvements are huge for sure, but not enough to warrant a single generation upgrade. I hope their next generation has the top offering with 24 GB of VRAM again, as it's why I bought a 4K OLED monitor.\n\nVery happy with AMD for finally bringing the heat. It just doesn't warrant an upgrade FOR ME.",
-        "Polarity": 0.25873015873015875,
+        "Polarity": 0.2587301587301587,
         "Sentiment": "Positive"
     },
     {
@@ -14873,7 +14866,7 @@
     },
     {
         "Comment": "... overly dramatic...",
-        "Polarity": -0.4333333333333333,
+        "Polarity": -0.43333333333333335,
         "Sentiment": "Negative"
     },
     {
@@ -15113,7 +15106,7 @@
     },
     {
         "Comment": "what's why we always need a strong AMD in the market, even if you are not a fan.",
-        "Polarity": 0.4333333333333333,
+        "Polarity": 0.43333333333333335,
         "Sentiment": "Positive"
     },
     {
@@ -15218,7 +15211,7 @@
     },
     {
         "Comment": "AMD, I’ve been holding on to my RX 580 even when I upgraded to high res 1440p. I’ve only been playing older titles etc and now, finally, I can toss out that old card and actually have the GPU I really want. \nIt will be a huge privilege to buy one of your 90 series cards. To hell with NVIDIA 😂😂",
-        "Polarity": 0.12833333333333335,
+        "Polarity": 0.12833333333333333,
         "Sentiment": "Positive"
     },
     {
@@ -15418,7 +15411,7 @@
     },
     {
         "Comment": "I was worried for a bit that grabbing a 7900XT for $600 was going to get destroyed...kudos for the 9070xt. Huge win for AMD and consumers",
-        "Polarity": 0.6000000000000001,
+        "Polarity": 0.6,
         "Sentiment": "Positive"
     },
     {
@@ -15458,7 +15451,7 @@
     },
     {
         "Comment": "amd fanatics give out a failure of 9070 for some kind of victory😅, I hope Nvidia will never give you a test card again.",
-        "Polarity": 0.14166666666666664,
+        "Polarity": 0.14166666666666666,
         "Sentiment": "Positive"
     },
     {
@@ -15613,7 +15606,7 @@
     },
     {
         "Comment": "I will be probably switching to dual 1440p monitors and my 1660ti cant handle that. 500€ is within my budget on GPU and Nvidia didnt make any card in this budget. So for me its AMD clear winner.",
-        "Polarity": 0.10000000000000002,
+        "Polarity": 0.09999999999999999,
         "Sentiment": "Positive"
     },
     {
@@ -15853,7 +15846,7 @@
     },
     {
         "Comment": "Now that AMD has made this big stride I'm curious to see how many improvements flow down to AMD GPUs going the merging of RDNA and CDNA.",
-        "Polarity": 0.06111111111111111,
+        "Polarity": 0.061111111111111116,
         "Sentiment": "Positive"
     },
     {
@@ -16238,7 +16231,7 @@
     },
     {
         "Comment": "Take away: I was expecting to see what I have been wanting for 3 years now, a GPU priced at $600 that can double the performance of my 6800xt( without AI nonsense). Another miss. Oh yes, better ray tracing, but who cares,I would never play any game at 40 fps just see what ray Tracing looks like. I very much prefer 1440p max out settings on most games at 100+ FPS. Oh and also, for some odd reason this never gets brought up in any of these video reviews, you can just buy that gpu and expect to dee that difference in performance compare to what you have. They sre using latest CPU in this comparisons. I have a 5900x paired with this 6800xt. If I was to just buy a 9070xt I will not see more than a 20% performance increase at 1440p. I would need to upgrade my CPU as well and there we go again down the rabbit hole. Heck NO",
-        "Polarity": 0.17086419753086418,
+        "Polarity": 0.1708641975308642,
         "Sentiment": "Positive"
     },
     {
@@ -18063,7 +18056,7 @@
     },
     {
         "Comment": "I really hope this drives down the price of the 5070ti.  It still has better RT, DLSS and powe consumption - which inpersonally care about.  Glad to see AMD coming closer to catching Nvidia!",
-        "Polarity": 0.35888888888888887,
+        "Polarity": 0.3588888888888889,
         "Sentiment": "Positive"
     },
     {
@@ -18173,7 +18166,7 @@
     },
     {
         "Comment": "Not making a XTX version is a huge mistake by AMD, and kinda sad..",
-        "Polarity": -0.04999999999999996,
+        "Polarity": -0.05000000000000002,
         "Sentiment": "Negative"
     },
     {
@@ -18453,7 +18446,7 @@
     },
     {
         "Comment": "\"Ray tracing gives Nvidia its first clear win\"\nYes, I can see that if I choose team green I can play games at a slightly higher unplayable framerate than team red (43fps vs 34fps). Very relevant!",
-        "Polarity": 0.18125000000000002,
+        "Polarity": 0.18125,
         "Sentiment": "Positive"
     },
     {
@@ -19623,8 +19616,8 @@
     },
     {
         "Comment": "Consoles don't even run most games in native 4k. It's all upscaled so the comparison to PC is already moot. That plus all the recurring costs, the fact that it's also not a fully functional computer that can do work, school, and casual stuff, and non-modular make it way more expensive than PCs.",
-        "Polarity": -2.7755575615628914e-17,
-        "Sentiment": "Negative"
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
     },
     {
         "Comment": "Im willing to overlook that power consumption because the product is actually good this time.",
@@ -19883,7 +19876,7 @@
     },
     {
         "Comment": "What is wrong with labs? \n9:45 When I look at the date, there is clearly something wrong. +20% more FPS when enabling frame gen for the 5070Ti vs +50% for the 9070XT. There is clearly something wrong.",
-        "Polarity": -0.1333333333333333,
+        "Polarity": -0.13333333333333333,
         "Sentiment": "Negative"
     },
     {
@@ -20958,7 +20951,7 @@
     },
     {
         "Comment": "The state of the GPU market is dire when we call a mid-range card for $550 \"well-priced\"... AMD's pricing is the bare minimum IMO, just because Nvidia's pricing is ridiculous doesn't make AMD's pricing great. Great pricing for these would've been $450 and $550 but AMD is still trying to upsell you 9070 XT with that measly $50 price difference, even if they can't afford to use these upselling tactics with their 10% market share.",
-        "Polarity": 0.15000000000000002,
+        "Polarity": 0.15000000000000005,
         "Sentiment": "Positive"
     },
     {
@@ -20978,7 +20971,7 @@
     },
     {
         "Comment": "i might wait for the 9060 so the 7600 can go down in price so the 6600 will go down in price and i can afford to upgrade from my 1050 2gb",
-        "Polarity": -0.15555555555555559,
+        "Polarity": -0.15555555555555556,
         "Sentiment": "Negative"
     },
     {
@@ -21453,7 +21446,7 @@
     },
     {
         "Comment": "I really don't care about ray tracing. You can keep your AI slop. I want memory capacity and rasterization. AMD is the clear winner this generation.",
-        "Polarity": 0.15000000000000002,
+        "Polarity": 0.15,
         "Sentiment": "Positive"
     },
     {
@@ -21973,7 +21966,7 @@
     },
     {
         "Comment": "Correction\n\nNvida slipped on $500k cheque for AI cards, fell down the elevator shaft to the $10 million AI data center, and the piano was filled with 5 years of backorders for their neural network accelerators.",
-        "Polarity": 0.04814814814814814,
+        "Polarity": 0.04814814814814816,
         "Sentiment": "Positive"
     },
     {
@@ -22038,7 +22031,7 @@
     },
     {
         "Comment": "Retailers have confirmed AMPLE stock and MSRP. So $600 for a 9070xt. Or $1300 for the slightly faster 5070ti. But it might burn your house down 😂",
-        "Polarity": 0.025925925925925925,
+        "Polarity": 0.025925925925925936,
         "Sentiment": "Positive"
     },
     {
@@ -22488,7 +22481,7 @@
     },
     {
         "Comment": "James' 'tache game going strong!",
-        "Polarity": 0.0708333333333333,
+        "Polarity": 0.07083333333333336,
         "Sentiment": "Positive"
     },
     {
@@ -22598,7 +22591,7 @@
     },
     {
         "Comment": "i have no idea why you are criticising over AI models when clearly the cards are for..\n\nwait for it..\n\nGRAPHICS !!\n\n🤷🏻",
-        "Polarity": 0.15625000000000003,
+        "Polarity": 0.15624999999999997,
         "Sentiment": "Positive"
     },
     {
@@ -23953,7 +23946,7 @@
     },
     {
         "Comment": "A white tear dripped down my pants watching this",
-        "Polarity": -0.07777777777777779,
+        "Polarity": -0.07777777777777778,
         "Sentiment": "Negative"
     },
     {
@@ -24578,6 +24571,66 @@
     },
     {
         "Comment": "Finally a GPU I want to buy. Shut up and take my money 💸",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is a great video!",
+        "Polarity": 1.0,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "I learned a lot.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is spam.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is a great video!",
+        "Polarity": 1.0,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "I learned a lot.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is spam.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is a great video!",
+        "Polarity": 1.0,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "I learned a lot.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is spam.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is a great video!",
+        "Polarity": 1.0,
+        "Sentiment": "Positive"
+    },
+    {
+        "Comment": "I learned a lot.",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral"
+    },
+    {
+        "Comment": "This is spam.",
         "Polarity": 0.0,
         "Sentiment": "Neutral"
     }

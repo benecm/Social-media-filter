@@ -1,6 +1,7 @@
 import os
 import json
-from models.sentiment_analysis import sentiment_analysis as analyze_sentiment
+#from models.sentiment_analysis import sentiment_analysis as analyze_sentiment
+from models.sentiment_analysis_bertmini import sentiment_analysis as analyze_sentiment
 from models.reasoning import summarize_comments
 import json
 import os

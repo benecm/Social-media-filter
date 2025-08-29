@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, jsonify, send_file
 import json
 import os
 from research.Functions import get_youtube_comments, save_comments_to_json
-from models.sentiment_analysis import sentiment_analysis
+from models.sentiment_analysis_ModerFinBERT import sentiment_analysis
 from models.reasoning import summarize_comments
 from diagram import generate_diagram
 

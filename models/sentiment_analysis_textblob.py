@@ -20,5 +20,5 @@ def sentiment_analysis(filename="data/comments.json", output_filename="data/sent
     
     print("Sentiment elemzés eredménye mentve:", output_filename)
     
-
-sentiment_analysis()
+if __name__ == "__main__":
+    sentiment_analysis()

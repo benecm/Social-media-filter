@@ -95,7 +95,14 @@
             background-color: #e7f3ff;
             padding: 1em;
             border-left: 4px solid #1877f2;
+            margin-bottom: 1em;
+        }
+        #llm_summary_container {
+            background-color: #fcf8e3;
+            padding: 1em;
+            border-left: 4px solid #f0ad4e;
             margin-bottom: 2em;
+            display: none; /* Initially hidden */
         }
     </style>
 </head>
@@ -118,7 +125,9 @@
             <div id="loader" class="loader"></div>
             <div id="results">
                 <div id="summary"></div>
+                <div id="llm_summary_container"></div>
                 <canvas id="sentimentChart" width="400" height="200"></canvas>
+                <canvas id="botChart" width="400" height="200"></canvas>
                 <div id="sentiment"></div>
             </div>
         </div>
@@ -176,12 +185,28 @@
 
         function displayResults(result) {
             const summaryContainer = document.getElementById("summary");
-            summaryContainer.innerHTML = `<h3>Összegzés</h3><p>Összesen ${result.summary.total_comments} komment. Pozitív: ${result.summary.positive_comments}, Negatív: ${result.summary.negative_comments}, Semleges: ${result.summary.neutral_comments}</p>`;
+            summaryContainer.innerHTML = `<h3>Statisztikai Összegzés</h3>
+                <p>Összesen ${result.summary.total_comments} komment. 
+                Pozitív: ${result.summary.positive_comments}, 
+                Negatív: ${result.summary.negative_comments}, 
+                Semleges: ${result.summary.neutral_comments}</p>
+                <p>Ebből emberi: ${result.summary.human_comments}, Bot gyanús: ${result.summary.bot_comments}</p>`;
+
+            const llmSummaryContainer = document.getElementById("llm_summary_container");
+            if (result.summary.llm_summary) {
+                // A simple way to format the LLM's text response
+                const formattedSummary = result.summary.llm_summary.replace(/\n/g, '<br>');
+                llmSummaryContainer.innerHTML = `<h3>AI Által Generált Összefoglaló</h3><p>${formattedSummary}</p>`;
+                llmSummaryContainer.style.display = 'block';
+            } else {
+                llmSummaryContainer.innerHTML = '';
+                llmSummaryContainer.style.display = 'none';
+            }
 
             const sentimentContainer = document.getElementById("sentiment");
-            let table = '<h3>Sentiment Elemzés</h3><table class="table table-striped"><thead><tr><th>Komment</th><th>Polaritás</th><th>Érzés</th></tr></thead><tbody>';
-            result.sentiment.forEach(item => {
-                table += `<tr><td>${item.Comment}</td><td>${item.Polarity.toFixed(2)}</td><td>${item.Sentiment}</td></tr>`;
+            let table = '<h3>Részletes Elemzés</h3><table class="table table-striped"><thead><tr><th>Komment</th><th>Polaritás</th><th>Érzés</th><th>Típus</th></tr></thead><tbody>';
+            result.results.forEach(item => {
+                table += `<tr><td>${item.Comment}</td><td>${item.Polarity.toFixed(2)}</td><td>${item.Sentiment}</td><td>${item.Prediction}</td></tr>`;
             });
             table += '</tbody></table>';
             sentimentContainer.innerHTML = table;
@@ -216,6 +241,39 @@
                         title: {
                             display: true,
                             text: 'Kommentek Érzelmi Megoszlása'
+                        }
+                    }
+                }
+            });
+
+            const botCtx = document.getElementById('botChart').getContext('2d');
+            new Chart(botCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Emberi', 'Bot gyanús'],
+                    datasets: [{
+                        label: 'Kommentek Eredete',
+                        data: [result.summary.human_comments, result.summary.bot_comments],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(255, 206, 86, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Kommentek Eredetének Megoszlása'
                         }
                     }
                 }

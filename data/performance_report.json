@@ -1,0 +1,108 @@
+{
+    "sentiment_analysis_performance": {
+        "accuracy": 1.0,
+        "classification_report": {
+            "Positive": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+            },
+            "Neutral": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 3.0
+            },
+            "Negative": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 2.0
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 7.0
+            },
+            "weighted avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 7.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "Positive",
+                "Neutral",
+                "Negative"
+            ],
+            "matrix": [
+                [
+                    2,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    3,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    2
+                ]
+            ]
+        }
+    },
+    "bot_detection_performance": {
+        "accuracy": 0.5714285714285714,
+        "classification_report": {
+            "human": {
+                "precision": 1.0,
+                "recall": 0.4,
+                "f1-score": 0.5714285714285714,
+                "support": 5.0
+            },
+            "bot": {
+                "precision": 0.4,
+                "recall": 1.0,
+                "f1-score": 0.5714285714285714,
+                "support": 2.0
+            },
+            "accuracy": 0.5714285714285714,
+            "macro avg": {
+                "precision": 0.7,
+                "recall": 0.7,
+                "f1-score": 0.5714285714285714,
+                "support": 7.0
+            },
+            "weighted avg": {
+                "precision": 0.8285714285714285,
+                "recall": 0.5714285714285714,
+                "f1-score": 0.5714285714285714,
+                "support": 7.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "human",
+                "bot"
+            ],
+            "matrix": [
+                [
+                    2,
+                    3
+                ],
+                [
+                    0,
+                    2
+                ]
+            ]
+        }
+    }
+}

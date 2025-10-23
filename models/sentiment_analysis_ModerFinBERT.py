@@ -4,16 +4,19 @@ import pandas as pd
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
+# --- Load model and tokenizer once on module import ---
+MODEL_NAME = "tabularisai/multilingual-sentiment-analysis"
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+
 def predict_sentiment(texts):
-    model_name = "tabularisai/multilingual-sentiment-analysis"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+    # This function now uses the globally loaded tokenizer and model for efficiency.
     inputs = tokenizer(texts, return_tensors="pt", truncation=True, padding=True, max_length=512)
     with torch.no_grad():
         outputs = model(**inputs)
     probabilities = torch.nn.functional.softmax(outputs.logits, dim=-1)
     sentiment_map = {0: "Negative", 1: "Negative", 2: "Neutral", 3: "Positive", 4: "Positive"}
-    return [sentiment_map[p] for p in torch.argmax(probabilities, dim=-1).tolist()]
+    return [sentiment_map[p.item()] for p in torch.argmax(probabilities, dim=-1)]
 
 
 def sentiment_analysis(filename="data/comments.json", output_filename="data/sentiment_results.json"):
@@ -24,10 +27,8 @@ def sentiment_analysis(filename="data/comments.json", output_filename="data/sent
         print("Nem található megfelelő JSON fájl!")
         return
 
-    results =[]
-    for comment in comments:
-        results.append(predict_sentiment(comment)[0])
-
+    # Process all comments in a single batch for efficiency
+    results = predict_sentiment(comments) if comments else []
     
     df = pd.DataFrame(comments,columns=["Comment"])
     df["Polarity"] = 0
@@ -39,7 +40,5 @@ def sentiment_analysis(filename="data/comments.json", output_filename="data/sent
     
     print("Sentiment elemzés eredménye mentve:", output_filename)
     
-
-
-
-sentiment_analysis()
+if __name__ == "__main__":
+    sentiment_analysis()

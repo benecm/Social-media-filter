@@ -3,11 +3,20 @@ import json
 import os
 from research.Functions import get_youtube_comments, save_comments_to_json
 from models.sentiment_analysis_ModerFinBERT import sentiment_analysis
-from models.reasoning import summarize_comments
+from models.bot_detection_modell import run_bot_detection
+from models.reasoning import get_quantitative_summary, summarize_with_rag
 from diagram import generate_diagram
 
 app = Flask(__name__)
 
+# Define constants for file paths
+DATA_DIR = "data"
+COMMENTS_PATH = os.path.join(DATA_DIR, "comments.json")
+SENTIMENT_RESULTS_PATH = os.path.join(DATA_DIR, "sentiment_results.json")
+BOT_DETECTION_RESULTS_PATH = os.path.join(DATA_DIR, "bot_detection_results.json")
+SUMMARY_PATH = os.path.join(DATA_DIR, "summary.json")
+STATIC_DIR = "static"
+DIAGRAM_OUTPUT_PATH = os.path.join(STATIC_DIR, 'sentiment_diagram.png')
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -27,24 +36,44 @@ def analyze():
         else:
             comments = get_youtube_comments(video_url)
         
-        comments_path = os.path.join("data", "comments.json")
-        sentiment_results_path = os.path.join("data", "sentiment_results.json")
-        summary_path = os.path.join("data", "summary.json")
-
-        save_comments_to_json(comments, comments_path)
+        save_comments_to_json(comments, COMMENTS_PATH)
         
-        sentiment_analysis(comments_path, sentiment_results_path)
-        summary = summarize_comments(sentiment_results_path)
+        # Run analyses
+        sentiment_analysis(COMMENTS_PATH, SENTIMENT_RESULTS_PATH)
+        run_bot_detection(COMMENTS_PATH, BOT_DETECTION_RESULTS_PATH)
 
-        with open(sentiment_results_path, "r", encoding="utf-8") as f:
+        # Get quantitative summary for charts
+        quantitative_summary = get_quantitative_summary(SENTIMENT_RESULTS_PATH, BOT_DETECTION_RESULTS_PATH)
+
+
+        # Load results for merging
+        with open(SENTIMENT_RESULTS_PATH, "r", encoding="utf-8") as f:
             sentiment_results = json.load(f)
+        with open(BOT_DETECTION_RESULTS_PATH, "r", encoding="utf-8") as f:
+            bot_results = json.load(f)
 
-        with open(summary_path, "w", encoding="utf-8") as f:
-            json.dump(summary, f, ensure_ascii=False, indent=4)
+        # Merge results for frontend display
+        bot_prediction_map = {item['Comment']: item['Prediction'] for item in bot_results}
+        
+        combined_results = []
+        for item in sentiment_results:
+            comment_text = item['Comment']
+            item['Prediction'] = bot_prediction_map.get(comment_text, 'human') # Default to human
+            combined_results.append(item)
+
+        # Get qualitative summary from RAG pipeline
+        llm_summary = summarize_with_rag(combined_results)
+
+        # Combine summaries
+        final_summary = quantitative_summary
+        final_summary['llm_summary'] = llm_summary
+
+        with open(SUMMARY_PATH, "w", encoding="utf-8") as f:
+            json.dump(final_summary, f, ensure_ascii=False, indent=4)
 
         return jsonify({
-            "sentiment": sentiment_results,
-            "summary": summary
+            "results": combined_results,
+            "summary": final_summary
         })
 
     except Exception as e:
@@ -53,12 +82,10 @@ def analyze():
 @app.route("/diagram")
 def diagram():
     try:
-        data_path = os.path.join('data', 'sentiment_results.json')
-        output_path = os.path.join('static', 'sentiment_diagram.png')
-        if not os.path.exists('static'):
-            os.makedirs('static')
-        generate_diagram(data_path, output_path)
-        return send_file(output_path, mimetype='image/png')
+        if not os.path.exists(STATIC_DIR):
+            os.makedirs(STATIC_DIR)
+        generate_diagram(SENTIMENT_RESULTS_PATH, DIAGRAM_OUTPUT_PATH)
+        return send_file(DIAGRAM_OUTPUT_PATH, mimetype='image/png')
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

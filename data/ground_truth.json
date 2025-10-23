@@ -1,0 +1,37 @@
+[
+    {
+        "Comment": "This is a fantastic video, so insightful!",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "I hated every second of this.",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Click here for free stuff bit.ly/scam",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "What was that about?",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Great content, keep it up!",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "This is the worst thing I have ever seen.",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "SUBSCRIBE TO MY CHANNEL FOR MORE",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    }
+]

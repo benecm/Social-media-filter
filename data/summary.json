@@ -1,6 +1,9 @@
 {
-    "total_comments": 10,
-    "positive_comments": 3,
-    "negative_comments": 2,
-    "neutral_comments": 5
+    "total_comments": 100,
+    "positive_comments": 35,
+    "negative_comments": 23,
+    "neutral_comments": 42,
+    "human_comments": 22,
+    "bot_comments": 78,
+    "llm_summary": "Based on the provided comments, here is a concise summary:\n\n1. The main topics or themes being discussed in the comments are criticisms of arena games and specific game features (e.g., denying someone from playing anvil). Additionally, there are questions about curses mode.\n2. The overall sentiment is mixed, with some users expressing frustration and others asking for content on specific topics like curses mode.\n3. There is no apparent spam-like behavior or patterns, but the comments seem to be genuine expressions of opinions and requests from viewers."
 }

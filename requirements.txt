@@ -1,0 +1,13 @@
+flask
+pandas
+matplotlib
+seaborn
+textblob
+transformers
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+sentence-transformers
+chromadb
+google-api-python-client

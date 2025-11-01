@@ -148,7 +148,10 @@
             const response = await fetch("/analyze", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ video_url: videoUrl, comment_count: parseInt(commentCount) || null })
+                body: JSON.stringify({ 
+                    video_url: videoUrl, 
+                    comment_count: commentCount ? parseInt(commentCount) : 100 
+                })
             });
 
             document.getElementById("loader").style.display = "none";

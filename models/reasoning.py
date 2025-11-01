@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import SentenceTransformerEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 
 # Fájl elérési utak
@@ -20,7 +20,7 @@ OLLAMA_BASE_URL = 'http://127.0.0.1:11500/'
 OLLAMA_BASE_URL = os.getenv('OLLAMA_HOST', 'http://127.0.0.1:11500/')
 try:
     llm = OllamaLLM(model=LLM_MODEL, base_url=OLLAMA_BASE_URL)
-    embedding_function = SentenceTransformerEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+    embedding_function = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
 except Exception as e:
     print(f"Failed to initialize LLM or Embeddings. Make sure Ollama is running and dependencies are installed. Error: {e}")
     llm = None
@@ -73,7 +73,7 @@ Your summary should address the following points:
 2.  What is the overall sentiment? Is it mostly positive, negative, or mixed?
 3.  Are there any interesting patterns, recurring questions, or spam-like behavior (based on the 'bot' prediction metadata)?
 
-Use only the information from the context below. Do not make things up.
+Use only the information from the context below. Do not make things up. Also never ask for more information, and never say that you cant answer, or the informations or the context is too small.
 
 Context:
 {context}

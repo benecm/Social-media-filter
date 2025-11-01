@@ -1,9 +1,613 @@
 {
-    "total_comments": 100,
-    "positive_comments": 35,
-    "negative_comments": 23,
-    "neutral_comments": 42,
-    "human_comments": 22,
-    "bot_comments": 78,
-    "llm_summary": "Based on the provided comments, here is a concise summary:\n\n1. The main topics or themes being discussed in the comments are criticisms of arena games and specific game features (e.g., denying someone from playing anvil). Additionally, there are questions about curses mode.\n2. The overall sentiment is mixed, with some users expressing frustration and others asking for content on specific topics like curses mode.\n3. There is no apparent spam-like behavior or patterns, but the comments seem to be genuine expressions of opinions and requests from viewers."
+    "results": [
+        {
+            "Comment": "Do you know what they do with nuclear waste in your country?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Why can't it be recycled again? Is it tied to costs or is there another cause?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "because germany prefers to burn gas",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "The uk stopped there reprocessing plant I think it was Magnox.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I have no problem with nuclear energy. I just dont trust our government to make a plant to spec or not sell nuclear material to the local terrorist group",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "4:53 - There's the reason why. Plutonium mines don't exist, and nuclear proliferation concerns are more of an issue with fuel reprocessing than cost, or safety, or anything else for most countries.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "In the future if greed doesn't stall it, I believe fusion will be the new source of energy, with \"spent\" fission products being used as the fuel.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "\"nuclear waste is reusable\" - brought to you by the creators of \"PFOAs are perfectly fine in water supply\" and \"teflons c8 is now c6 (genx) so it's safe, trust us\".",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "So practical and easy to apply.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Bro isn't shy about rockin' that fanny pack.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "9:58",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "We aren't doing it because, money",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I never understood how refining ore could be more cost effective than refining spent fuel.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "6:02 Let's get warm water (not boiling) instead of electricity then. We consume electricity to make warm water anyway.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": " cow's are flying on the internet!!!",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Classic perogative: Can we do it? Yes. Is it better? Yes. Is it cheaper? No. Okay, then we don't want it.\n\nThat and the US fearing that Godforbid, anyone might have the power to not kowtow to them.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "A random guess: Politics\nAnother \"random\" guess: money",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Why can't we just turn it into plutonium rods and put it in the awesome sink? It's really not that hard.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "What happens with chemicals used in this process - i.e. acids used to separate waste? Doesn't this process render them radioactive?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "People discussing about reuse me thinking about jadugoda people condition. So sick ",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "This seems like it will hurt the bottom line kind of video",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "In a molten salt reactor, the actinoids float to the top and can be removed, leaving the good fuel behind. Achieves 97% efficiency instead of 3%.  Can also theoretically use \"spent\" fuel",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "its often turned into bullets and shot into whatever overshore engineered hellhole",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "The first minute passed, and when she said \"why\" I just told myself \"because people can't be trusted\"",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "when i opened the video and thought what was doing leenbeefpatty in a nuclear waste video and then realized she was a different person",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Untill we produce energy from nuclear fission/fusion directly and not boil water and spin a fan.. it's not that high-tech. Windmills and solar seems better.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Because it's not. Close video, move on.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "It's all about profits and control, the evil of humanity is what stops us from advancing, you can see it all over the world, people ending other people, young, old, children, does not matter and the ones that end up at the top making these decisions are always the worst ones that humanity has to offer.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Canada is.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "One of the only good arguments against nuclear reactors that I’ve heard and there seems to be no solution for is that it provides targets for bombs. If a country were to decide to strike another, their nuclear reactors would be a perfect target. It would not only result in a catastrophic disaster but also a huge loss of energy. I’m not sure how that stands up to current mainstream energy sources but it is something to think about.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Because oil is too big",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "As a person that wanted to be a environmentlist politicians end of discussion.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Can we stop the bright green glowing barrels of doom that kill anything that comes to close to it agenda/meme ? \nthanks",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "12:43 yo is that nuke",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "What’s the part? I don’t understand if the spent rods are 95% full and can produce steam. Why don’t they use that steam to produce energy?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Even the \"true waste\" is chock full of precious metals and rare earths.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Can't you burn the leftover fishion products and use it as a fuel even if it's very inefficient?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "basically we are not repurposing it bc usa is a scared lil b xD",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Is it just me or does nuclear energy just not seem worth it at the moment? Nuclear is expensive, recycling the waste is even more expensive and all recycling really does is put it back in the loop for 5-10 years until it becomes waste again that is unrecyclable. On top of the threat of nuclear weapons / terrorist attacks.\n\nLike just build some offshore windparks or something and be done with it? What am I missing. Why are countries still investing in it?",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "11:20 I wonder if this includes the cost of the waste storage.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Short answer: it’s cheaper to use new then recycle used. Capitalism.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Put some in your water love. And chug it down. Not me thanks",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Так в России например используют МОКС топливо, почему в остальном мире не используют?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Actually the main reason to build nuclear powerplants is not cheap energy, as it is not so cheap in the long term, but to obtain plutonium for nuclear arms. This is why the countries wich have a nuclear arsenal have so many noclear power plants. Countries without nuclear arsenal still build nuclear power plants in order to get in toch with the technology and be able at some day to build nuclear arms. Another reason is, of course, the prestige of being a country so advanced that it has nuclear power plants.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "French propoganda",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I mean, depleted uranium is still used in tank rounds.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I hate this cost argument when it comes to nuclear waste recycling. There is so much money wasted every day for useless things, but when it comes to being responsible with our waste, its to expensive.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "The answer is really simple.  The environmentalist want nuclear energy to be as dangerous as possible so it will be easier to ban outright.\n\nIts ironically similar to conservatives not vacinating their kids for hpv to make sex more dangerous to discourage them from having sex.  Its the exact same thing, really.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "when something is recyclable but not used it means one thing - recycling must be more expensive than production. (due to this or other reasons)",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "And there's an even cooler thing that some of the fission byproducts can be used for : RTGs for spacecrafts that can produce energy for several decades!",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Does the waste recycling have to be so complicated? What about using a heat exchanger to extract that heat energy? Or what about peltier elements to make electricity?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "The barrels in the pictures at the start are more irradiated material than radioactive material. There might be some radioactive material, due to neutron activation, but those barrels are for medical material and the like. Reactor wast is put in the huge tanks made of multiple layers of steel and concrete. And are gray or greenish.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Russian reactor БН-800 is operating for already two years using ONLY WASTE NUCLEAR FUEL from other reactors... And this type of reactors on fast neutrons can be used to produce nuclear fuel out of depleted waste.  It seems like campfire, where you you adding 3 logs in, get out energy and then take out 3 logs back (but new logs only can be used with previous types of reactors. But when they get depleted there - go another round) . We build several more reactors of this type. Think about it!",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Why?\nRemaining 4%",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Rare france W",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "If anyone asks the question of \"if X is good, why aren't we doing X\" the answer is always money.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "not profitable? Anything in capitalism which is not profitable wont be done",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "could we use those constantly heating byproducts to make free warm water for people to use?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "The protest movement against nuclear in germany was the first time I realized that maybe the people aren't always right.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "9:58 The low taper fade is still?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I mean I would take at least 3 if they are free?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I bet there will be a bacteria that eats nuclear waste if you leave it to nature",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Rich white men.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "great video, cheers",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I would think a nuclear armed country would be interested in nuclear fuel reproccessing/recycling as a source of both plutonium and additional fuel for reactors.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "fuck mbappe",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Still dont get why we dont harvest the energy later on when its not suitable for normal powerplants.\nLike \n1st use, powerplant\n2nd use, smaller turbines, its still way over 100 degrees hot for years so it still produce steam and energy with way lower chance for critical mass emergencies.\n3rd use: heating up water for households for decades.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I haven't watched the video. The answer is money.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Kovarex enrichment process",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "\"Why aren’t we doing it?\" - Because none of you hold your authorities or corporations accountable for the garbage they do every single hour of every single day. Maybe you should do that.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "They don’t want you to know its recyclable",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Money and power. Probably money.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Just make Plutonium Fuel Rods and dump them into an Awesome Sink ",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Why can't the spent fuel rods power fuel cells",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "My father was involved in building two major Nuclear Power plants in Germany. According to him, nuclear power was one of the solutions to stop using fossil fuels, with German reactors being some of the safest in the world. He's still angry at our government",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "einfach zu beantworten:\nis billiger neues zu benutzen, gleiche mit plastik! \nund die milliardäre, die das alles besitzen kümmert das doch alles nicht, solang die kohle hinterhergeschmissen bekommen, versauen die weiter die welt",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "1:01 So the issue is… once again Europe ",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "this should be highly specific and not the general \"nuclear waste\"\npeople should know it also includes used apparatus that has been radiated by something right?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "So we have a lot og waste that gets stored in the caves rather than be recycled. Could it be taken out and recycled in the future when it becomes profitable?",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "I'm french, and despite being kind of the leaders in nuclear waste recycling, our nuclear program is VERY flawed because of politics. A lot of innovations are not being pushed because of european energy market. If we continued huge developement ever since we started nuclear programs we might have been even more advanced. But that's not good for politics apparently.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Yeah they also said plastic waste is \"technically recyclable\".\nNuclear energy and recycling is not feasible without huge subsidies. The cost of nuclear power plants is insane. \nRenewable are way easier and cheaper.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Because this story never was true. It would be economical nonsense to do it, and the (also nuclear) waste volume created by it would just grow. Neither „Transmutation“ nor „nuclear recycling“ will solve any of the problems of nuclear fission. That is not true, there is one solution: just stop producing more nuclear waste every day and use much cheaper and cleaner renewable energy. Nuclear fission was an error to begin with, it was mainly done for military reasons on a scale that had to be sold to the public. It always was uneconomical expensive, unpractical and dangerous, as proven several times in history.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Not every nuclear waste is depleted nuclear fuel rods.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Because every green party and Europe intend to destroy Nuclear plants and use more fossil fuel because they're stupid, it's that simple.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Because germans are morons. There I saved you 30 minutes.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "imagine a global south country having a MSR, the US would make it their goal to blow up that power plant because they don't want the world to have nice things that the US doesn't control. they literally air struck enriched Nuclear material this year! in 2025! with all their shit about the environment and guilt tripping consumers into wasting money on green washing while airstriking a HIGHLY radioactive refined uranium ...",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Let me guess ((they)) are behind it",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "for now they dont need to develop the process to recycle but when  they do need to it will be way to expensive in the future. where as in theory if they develop it now it could be cheaper in the future when they need it.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "We use it to make depleted uranium ammo",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Good for France. I never thought I would say something positive about France. Good for them on carbon free energy production and recycling Nuclear waste. That's what should be pushed.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Just harvest the giant Nuclear Reactor in the sky...",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "steel doesnt melt? hmmm.........",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "USA does recycle nuclear waste! They put it in bombs and munitions, then they bomb innocent countries and dump all that waste through the use of bombs and bullets.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Does this count as steampunk?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Uranium mining is only less expensive, because colonization has weakened the nations where it is mined, so that they can only get paid a pittance of what uranium is worth and not demand proper environmental regulations for mining that would protect their citizens but would drive up the costs.  Good thing France is continuing to invest in recycling nuclear fuel, because many leaders of the global south are beginning to cut uranium supply off to European countries that colonized them.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "As usual, the UK giving up.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Don't you talk about molten salt reactors (aka thorium reactors), which should be able to run on nuclear plant's waste ?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Nuclear waste has a shelf time of 1 million years. I think by then wd will get 100% renewable nuclear energy that reuse xaste and produce no waste. Legitimately dont worry about it.\n\nAnd btw 1 of those barrels is the nuclear waste of 1 nuke plant per year, whereas fossil fuel plants produce waste the size of singapore yearly.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "The world is sick, how they demonize nuclear energy and not even recycle it is crazy.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "So France is the biggest recycler of nuclear waste, not Russia? Lmao",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        }
+    ],
+    "summary": {
+        "total_comments": 100,
+        "positive_comments": 11,
+        "negative_comments": 44,
+        "neutral_comments": 45,
+        "human_comments": 84,
+        "bot_comments": 16,
+        "llm_summary": "Summary:\n\n1. The main topics being discussed in the comments are related to appreciation for the video itself, with users expressing their gratitude by repeatedly saying \"great video\" and \"cheers\".\n2. The overall sentiment is overwhelmingly positive, with all comments conveyed a sense of approval and admiration.\n3. There does not appear to be any notable patterns, recurring questions, or spam-like behavior in the provided comments."
+    }
 }

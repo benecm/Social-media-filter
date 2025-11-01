@@ -40,6 +40,9 @@ def get_youtube_comments(video_url, api_key='AIzaSyCYzkS4z6JBJ8fkvsSiLIJdTGj83UR
         print("Érvénytelen YouTube link!")
         return []
 
+    # Ensure max_results is an integer and within bounds
+    max_results = min(max(1, int(max_results)), 10000)  # Between 1 and 10000
+    
     youtube = build("youtube", "v3", developerKey=api_key)
     comments = []
     
@@ -47,7 +50,7 @@ def get_youtube_comments(video_url, api_key='AIzaSyCYzkS4z6JBJ8fkvsSiLIJdTGj83UR
         part="snippet",
         videoId=video_id,
         textFormat="plainText",
-        maxResults=min(int(max_results), 10000)  # Biztonsági ellenőrzés
+        maxResults=min(max_results, 100)  # YouTube API limit per request
     )
 
     while request and len(comments) < int(max_results):

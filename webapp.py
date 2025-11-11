@@ -33,7 +33,7 @@ def analyze():
     try:
         data = request.get_json()
         video_url = data.get("video_url")
-        comment_count = int(data.get("comment_count", 100))  # Ensure it's an integer
+        comment_count = int(data.get("comment_count", 100))
 
         if not video_url:
             return jsonify({"error": "Nincs megadva YouTube link!"}), 400
@@ -46,7 +46,7 @@ def analyze():
         analysis_result = current_agent.analyze_video(video_url, comment_count)
         
         if "error" in analysis_result:
-            return jsonify({"error": analysis_result["error"]}), 500
+            return jsonify(analysis_result), 500
 
         return jsonify(analysis_result)
 

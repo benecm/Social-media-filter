@@ -1,0 +1,9 @@
+[run]
+source = .
+omit =
+    tests/*
+    venv/*
+    */__init__.py
+    research/asdasasdas.py
+    research/reason_modell.py
+    tests/*

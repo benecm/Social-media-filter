@@ -2,8 +2,8 @@ import os
 import json
 #from models.sentiment_analysis import sentiment_analysis as analyze_sentiment
 from models.sentiment_analysis_bertmini import sentiment_analysis as analyze_sentiment
-from models.reasoning import summarize_comments
-import json
+from models.reasoning import summarize_with_rag
+
 import os
 
 # Adatmappa
@@ -53,7 +53,11 @@ def run_analysis():
 
     # Reasoning (összegzés) futtatása
     print("Running summarization...")
-    summary_result = summarize_comments(SENTIMENT_PATH) # bot results path is not used
+    # A summarize_with_rag a feldolgozott adatokat várja, nem a fájl elérési útját.
+    llm_summary = summarize_with_rag(sentiment_data)
+    summary_result = {
+        "llm_summary": llm_summary
+    }
     print("\nÖsszegzés eredménye:", summary_result)
     print("Summarization finished.")
 

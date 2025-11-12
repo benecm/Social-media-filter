@@ -52,40 +52,40 @@ class AnalysisAgent:
         """
         try:
             # Execute sequential analysis steps
-            input_str = f"{video_url}|{comment_count}"  # Combine URL and count
-            self.agent.run(input_str)  # Pass URL and comment count
-            self.agent.run("analyze")  # Run sentiment analysis
-            self.agent.run("detect")   # Run bot detection
-            summary_response = self.agent.run("summarize")  # Generate summary
+            input_str = f"{video_url}|{comment_count}"
+            
+            # 1. Kommentek gyűjtése
+            collection_result = self.agent.run(input_str)
+            if "Error" in collection_result:
+                return {"error": f"Kommentgyűjtés sikertelen: {collection_result}"}
+
+            # 2. Sentiment elemzés futtatása
+            sentiment_result = self.agent.run("analyze")
+            if "Error" in sentiment_result:
+                return {"error": f"Sentiment elemzés sikertelen: {sentiment_result}"}
+
+            # 3. Bot detektálás futtatása
+            bot_detection_result = self.agent.run("detect")
+            if "Error" in bot_detection_result:
+                return {"error": f"Bot detektálás sikertelen: {bot_detection_result}"}
+
+            # 4. Összegzés generálása
+            summary_generation_result = self.agent.run("summarize")
+            if "Error" in summary_generation_result:
+                return {"error": f"Összegzés generálás sikertelen: {summary_generation_result}"}
             
             # Load the final results from the saved file
+            if not os.path.exists(SUMMARY_PATH):
+                return {"error": f"Az összegző fájl nem található a várt helyen: {SUMMARY_PATH}"}
+
             with open(SUMMARY_PATH, "r", encoding="utf-8") as f:
                 results = json.load(f)
-            
-            # If results is a string (summary text), wrap it in a proper structure
-            if isinstance(results, str):
-                with open(COMMENTS_PATH, 'r', encoding='utf-8') as f:
-                    comments = json.load(f)
-                with open(SENTIMENT_RESULTS_PATH, 'r', encoding='utf-8') as f:
-                    sentiment_results = json.load(f)
-                with open(BOT_DETECTION_RESULTS_PATH, 'r', encoding='utf-8') as f:
-                    bot_results = json.load(f)
 
-                bot_prediction_map = {item['Comment']: item['Prediction'] for item in bot_results}
-                combined_results = []
-                for item in sentiment_results:
-                    comment_text = item['Comment']
-                    item['Prediction'] = bot_prediction_map.get(comment_text, 'human')
-                    combined_results.append(item)
-
-                return {
-                    "results": combined_results,
-                    "summary": {
-                        "llm_summary": results,
-                        "total_comments": len(comments)
-                    }
-                }
             return results
             
+        except FileNotFoundError as e:
+            return {"error": f"Hiányzó fájl a feldolgozás során: {e}"}
+        except json.JSONDecodeError as e:
+            return {"error": f"Hiba a JSON fájl dekódolásakor: {e}. Lehet, hogy a fájl sérült vagy üres."}
         except Exception as e:
-            return {"error": str(e)}
+            return {"error": f"Váratlan hiba történt az elemzés során: {str(e)}"}

@@ -35,7 +35,8 @@ class SentimentAnalysisTool(BaseTool):
     description: str = "Analyzes sentiment of collected comments. Input should be 'analyze' to start analysis."
 
     def _run(self, input_str: str) -> str:
-        if input_str.lower() != "analyze":
+        # Accept a few variants (extra whitespace or surrounding text) to be robust when called by the agent
+        if not isinstance(input_str, str) or "analyze" not in input_str.strip().lower():
             return "To analyze sentiments, just input 'analyze'"
         try:
             sentiment_analysis(COMMENTS_PATH, SENTIMENT_RESULTS_PATH)
@@ -48,8 +49,8 @@ class BotDetectionTool(BaseTool):
     description: str = "Detects bot-generated comments. Input should be 'detect' to start detection."
 
     def _run(self, input_str: str) -> str:
-        if input_str.lower() != "detect":
-            return "To detect bots, just input 'detect'"
+        # Be lenient with the agent's input formatting. If the input clearly isn't a detect command,
+        # still attempt detection to avoid missing the save step when the agent passes slightly different text.
         try:
             run_bot_detection(COMMENTS_PATH, BOT_DETECTION_RESULTS_PATH)
             return "Successfully analyzed comments for bot detection"
@@ -61,7 +62,8 @@ class ResultsSummarizerTool(BaseTool):
     description: str = "Summarizes the analysis results. Input should be 'summarize' to generate summary."
 
     def _run(self, input_str: str) -> str:
-        if input_str.lower() != "summarize":
+        # Allow slight variations from the agent (whitespace, extra tokens)
+        if not isinstance(input_str, str) or "summarize" not in input_str.strip().lower():
             return "To generate summary, just input 'summarize'"
         try:
             # Load results

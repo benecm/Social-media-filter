@@ -99,28 +99,3 @@ def analyze_comments(filename="comments.json"):
     plt.ylabel("Gyakoriság")
     plt.title("Komment hosszúságok eloszlása")
     #plt.show()
-
-def sentiment_analysis(filename="comments.json", output_filename="sentiment_results.json"):
-    try:
-        with open(filename, "r", encoding="utf-8") as f:
-            comments = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        print("Nem található megfelelő JSON fájl!")
-        return
-    
-    df = pd.DataFrame(comments, columns=["Comment"])
-    df["Polarity"] = df["Comment"].apply(lambda x: TextBlob(x).sentiment.polarity)
-    df["Sentiment"] = df["Polarity"].apply(lambda x: "Positive" if x > 0 else "Negative" if x < 0 else "Neutral")
-    
-    sentiment_results = df.to_dict(orient="records")
-    with open(output_filename, "w", encoding="utf-8") as f:
-        json.dump(sentiment_results, f, ensure_ascii=False, indent=4)
-    
-    print("Sentiment elemzés eredménye mentve:", output_filename)
-    
-    plt.figure(figsize=(8, 5))
-    df["Sentiment"].value_counts().plot(kind="bar", color=['green', 'red', 'gray'])
-    plt.xlabel("Sentiment")
-    plt.ylabel("Frekvencia")
-    plt.title("Kommentek sentiment eloszlása")
-    #plt.show()

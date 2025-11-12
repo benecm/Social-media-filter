@@ -10,10 +10,11 @@ def client():
     with app.test_client() as client:
         yield client
 
-@patch('webapp.AnalysisAgent')
-def test_analyze_success(mock_agent_class, client):
+@patch('webapp.init_agent') # Patch init_agent directly
+def test_analyze_success(mock_init_agent, client):
     """Teszteli az /analyze végpont sikeres működését."""
     # Mock beállítása
+    mock_agent_class = MagicMock() # Create a mock for AnalysisAgent if needed for its methods
     mock_agent_instance = mock_agent_class.return_value
     mock_analysis_result = {
         "results": [{"Comment": "Test comment", "Sentiment": "Positive"}],
@@ -21,6 +22,7 @@ def test_analyze_success(mock_agent_class, client):
     }
     mock_agent_instance.analyze_video.return_value = mock_analysis_result
 
+    mock_init_agent.return_value = mock_agent_instance # Ensure init_agent returns our mocked instance
     # Kérés küldése
     response = client.post('/analyze', json={
         'video_url': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',

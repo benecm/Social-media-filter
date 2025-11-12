@@ -18,12 +18,13 @@ class TestAnalysisAgent(unittest.TestCase):
         expected_input_str = f"{video_url}|{comment_count}"
         
         # Mock-ok beállítása
-        self.mock_agent.run.return_value = "Success"
+        self.mock_agent.run.return_value = "Successfully processed" # Simulate a success message from the tool
         mock_summary_data = {"results": [], "summary": "Test summary"}
         
         # A `run` hívások sorrendjének ellenőrzése és a `summary.json` olvasásának mockolása
-        with patch('builtins.open', mock_open(read_data=json.dumps(mock_summary_data))) as mock_file:
-            result = self.analysis_agent.analyze_video(video_url, comment_count)
+        with patch('os.path.exists', return_value=True):  # Mock os.path.exists to ensure file is "found"
+            with patch('builtins.open', mock_open(read_data=json.dumps(mock_summary_data))) as mock_file:
+                result = self.analysis_agent.analyze_video(video_url, comment_count)
 
         # Ellenőrzések
         self.assertEqual(self.mock_agent.run.call_count, 4)
@@ -45,4 +46,4 @@ class TestAnalysisAgent(unittest.TestCase):
         
         result = self.analysis_agent.analyze_video(video_url, comment_count)
         self.assertIn("error", result)
-        self.assertEqual(result["error"], "Agent failed")
+        self.assertEqual(result["error"], "Váratlan hiba történt az elemzés során: Agent failed")

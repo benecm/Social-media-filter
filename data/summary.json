@@ -1,0 +1,73 @@
+{
+    "results": [
+        {
+            "Comment": "what an insane build",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "I’m a lurker but just wanted to say I only watch these while I poop. Great content to ease the stomach",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "16k damage on Sion. WTF. He broke the game.",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "thank you for changing the upload schedule again <33333 love you bro!",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "very e",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "-Day: 8 of asking king too finally make a samira video",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Give the editor a raise",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Actually love nighog vids, i play on EUW, wish to play with him one day. Watch everything (Not hate watching). I dont get those that does that Lmao",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "LMAOOOO the fire sale moment",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Loved the video this time around. Even the bonus game at the end was nice.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        }
+    ],
+    "summary": {
+        "total_comments": 10,
+        "positive_comments": 5,
+        "negative_comments": 2,
+        "neutral_comments": 3,
+        "human_comments": 3,
+        "bot_comments": 7,
+        "llm_summary": "Summary:\n\n1. The main topics discussed in the comments are positive reactions to a recent video, gratitude for the content, and personal anecdotes about how the videos help them relax during certain activities (watching King's gameplay while on the toilet).\n2. The overall sentiment is overwhelmingly positive, with users expressing appreciation and enjoyment of the content.\n3. There is no apparent spam-like behavior or recurring questions, as all comments seem to be genuine reactions from individual viewers."
+    }
+}

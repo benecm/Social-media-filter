@@ -1,0 +1,108 @@
+{
+    "sentiment_analysis_performance": {
+        "accuracy": 0.63,
+        "classification_report": {
+            "Positive": {
+                "precision": 0.7741935483870968,
+                "recall": 0.8,
+                "f1-score": 0.7868852459016393,
+                "support": 30.0
+            },
+            "Neutral": {
+                "precision": 0.631578947368421,
+                "recall": 0.34285714285714286,
+                "f1-score": 0.4444444444444444,
+                "support": 35.0
+            },
+            "Negative": {
+                "precision": 0.54,
+                "recall": 0.7714285714285715,
+                "f1-score": 0.6352941176470588,
+                "support": 35.0
+            },
+            "accuracy": 0.63,
+            "macro avg": {
+                "precision": 0.648590831918506,
+                "recall": 0.638095238095238,
+                "f1-score": 0.6222079359977142,
+                "support": 100.0
+            },
+            "weighted avg": {
+                "precision": 0.6423106960950764,
+                "recall": 0.63,
+                "f1-score": 0.613974070502518,
+                "support": 100.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "Positive",
+                "Neutral",
+                "Negative"
+            ],
+            "matrix": [
+                [
+                    24,
+                    2,
+                    4
+                ],
+                [
+                    4,
+                    12,
+                    19
+                ],
+                [
+                    3,
+                    5,
+                    27
+                ]
+            ]
+        }
+    },
+    "bot_detection_performance": {
+        "accuracy": 0.41,
+        "classification_report": {
+            "human": {
+                "precision": 0.39622641509433965,
+                "recall": 0.4375,
+                "f1-score": 0.4158415841584158,
+                "support": 48.0
+            },
+            "bot": {
+                "precision": 0.425531914893617,
+                "recall": 0.38461538461538464,
+                "f1-score": 0.40404040404040403,
+                "support": 52.0
+            },
+            "accuracy": 0.41,
+            "macro avg": {
+                "precision": 0.41087916499397836,
+                "recall": 0.4110576923076923,
+                "f1-score": 0.4099409940994099,
+                "support": 100.0
+            },
+            "weighted avg": {
+                "precision": 0.41146527498996394,
+                "recall": 0.41,
+                "f1-score": 0.40970497049704974,
+                "support": 100.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "human",
+                "bot"
+            ],
+            "matrix": [
+                [
+                    21,
+                    27
+                ],
+                [
+                    32,
+                    20
+                ]
+            ]
+        }
+    }
+}

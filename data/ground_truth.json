@@ -1,36 +1,503 @@
 [
     {
-        "Comment": "This is a fantastic video, so insightful!",
-        "Sentiment": "Positive",
-        "Prediction": "human"
-    },
-    {
-        "Comment": "I hated every second of this.",
-        "Sentiment": "Negative",
-        "Prediction": "human"
-    },
-    {
-        "Comment": "Click here for free stuff bit.ly/scam",
+        "Comment": "Are SSBs going to actually happen and become another great option for energy storage? Take your personal data back with Incogni! Use code UNDECIDED at the link below and get 60% off an annual plan: http://incogni.com/undecided\n\nIf you liked this, check out How My Geothermal Heat Pump Really Performed (2 Years) https://youtu.be/DTb7TKJzr5g?list=PLnTSM-ORSgi7uzySCXq8VXhodHB5B5OiQ",
         "Sentiment": "Neutral",
         "Prediction": "bot"
     },
     {
-        "Comment": "What was that about?",
+        "Comment": "13:45 \"still nothing solid to hang on to...\" oh c'mon ",
         "Sentiment": "Neutral",
         "Prediction": "human"
     },
     {
-        "Comment": "Great content, keep it up!",
+        "Comment": "Thankfully, the world is not standing still while they're trying to solve solid-state.",
         "Sentiment": "Positive",
         "Prediction": "human"
     },
     {
-        "Comment": "This is the worst thing I have ever seen.",
+        "Comment": "There many advanced battery technologies are available since year 2000 and those scientists were promising mass production would be within 5 years ahead, 10 years ahead even 20 years ahead. However, here we are in 2025 that those advanced battery technologies are still in laboratory phase because the investors are representing big oil companies.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "sounds promissing but as long it`s not valuable for Companys to recycle Li-ion batterys to 100% this car tec has no sustainable future.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "So right now SSB is in it's VCR vs Betamax phase.",
         "Sentiment": "Negative",
         "Prediction": "human"
     },
     {
-        "Comment": "SUBSCRIBE TO MY CHANNEL FOR MORE",
+        "Comment": "Been hearing the same thing for close to 2 decades, still nothing",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Toyota seem to have made very bold claims this year of a 2027-2028 launch with very improved range, introduced in stages.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "bRo Im pReTtY sUrE bAtTeRiEs ArE aLrEaDy SoLiD",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "OOOOOOHHHH WE'RE HALFWAY THERE!",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Perhaps these companies are straying a bit too far away from Prof John B. Goodenough's battery, and just making one is maybe not quite good enough.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "m.2 solid state is going to be super fast",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "You look at every technology in battery and there are various ways you can make a battery that is long lasting, high energy density, fast charging, safe, etc..BUT the main problem is the cost of manufacture - its still TOO DAMN expensive...Every path the manufacturing OR the input is too damn expensive..That is the real challenge",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Good luck !",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "https://youtu.be/S-GBawUZm0k?si=GwdieqGsMCama_cj",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "it is killing people. it has been years since seeing the jaws of life out on the roads desperately trying to retrieve trapped passengers and drivers",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "This car is nothing compared to the zeekr 001!",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "The more things change the more they stay the same...",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Lambo = overrated xD",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "It’s over for the european brands",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Worst thing is , it doesn't look bad",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "That nurburgring times aren t correctly enough of them ...",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "it has 4 wheels - quite porschy",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "German automakers: 3000€ if you want adaptive cruise control, 200€ for ash tray, 300€ if you want colored logo,do you want AC ?",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "The more chinese cars, the less jobs in europ. The less jobs, the more poor we get. It is that simple.",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "I think the driver of the Lamborghini is the cosmonaut from the movie \"Armageddon\". At least the accent checks out.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Whats the point when one is automatic and the other is manual. Dude looks like a slow shifter too. Xiaomi changed gears 3 times by the time he fully pushed down the clutch once ",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Well that didn't age well",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Someone’s hot on the price tag, we need more of that. Buying copied R&D, Russian oil, Turkish hairlines - Farange style living ",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "you should check out Deepal E07 Transformer and maybe review it as well.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "It’s amazing how cheap China can make stuff. It’s almost as if they use slave labour and do none of their own R&D, just being more than happy to steal others work and pass it off as their own.",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Have they passed the safety test for sale in Europe? In China it has so many safety problem and people are burnt alive. A handphone maker without automobile experience makes a car within 3 years. I will not trust my life in it. I'm a Chinese btw.",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "I can’t wait for them to come to Norway. It’s the only car that I want to buy",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "One issue , they drop to bits or burst into flames. They  now carnt shift them in China. There was a waiting list when they first come out. Dump them on the British.....\nInsurance company's will refuse to insure them.",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Now nobody wants the xiaomi cars anymore in China... Why?",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Although this car ends the europe gas cars, its a fact that gas stay forever on top with their sound.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "The market for second-hand Xiaomi's in China has fallen through the floor because of the dangerous faults and resultant accidents.",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "That guy has to be the lamest flagger I’ve ever seen. No wonder they all missed the mark at the final race lmao",
+        "Sentiment": "Negative",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "I just saw the thumbnail that said super secret augment and its names was an error code so i clicked it",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "This was fucking insane to watch",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Would it be possible for you to do a few builds where you focus on massive amouse of healing or sheilding? like support based i know you dont like doing it often as it doesnt pull as many veiws but id love to see more!",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": ">looks inside \n>checks nidhogg's reply\n>gets got",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Stewie2k reference",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "have my like and 21 minutes of watchtime",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Augment 405? Insane double minionmancer and apex godrun was my title. Ngl tho I just watch whatever vid you post. If it's a control mage, fun adc(twitch, mf, tristana, etc), or some troll concept that shouldn't work, I watch right away. If it's a beefcake I usually click off, and then watch it later anyways cause it's still gonna be good.\n\nHope the info helps. I like how you do your stuff and how you market. The impression your marketing gives is like \"Doing what I have to even though I'd prefer to be specific\", which is perfect to me.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Nice videos but the insecure talk about comments is starting to be boring and repetitive.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "king nidhogg velkoz is giving me cancer but it's fine I still love him",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Ah, the classic con crud. I can tell it can't keep you from your uncanny highrolls.",
+        "Sentiment": "Neutral",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "The title I got was: Secret \"Augment 405\": Double Minionmancer + Apex Inventor GOD Tier Highroll | League Arena Gameplay\nHonestly that was intriguing enough",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "I love how persona 4 specialist just become so deeply rooted in binding of isaac when getting Q4 items",
+        "Sentiment": "Positive",
+        "Prediction": "human"
+    },
+    {
+        "Comment": "Amazing content! This video truly changed my whole perspective instantly, thank you for sharing such powerful insights!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Absolutely wonderful explanation, I subscribed immediately because this is the quality everyone needs!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This is the type of video that brings joy every day, truly inspirational message!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Great job! I shared this with my entire community since this information must be spread globally!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I can't believe how good this is, your channel deserves millions of supporters!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This is a masterpiece of knowledge delivery, thank you for providing this blessing of content!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Wonderful demonstration, this helped me achieve instant clarity!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Unbelievably useful information, I had to watch twice because it was so good!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "The quality here is unmatched, truly top-tier creator experience!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Full respect to this video, easily the most helpful I've seen this year!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This video increased my motivation a lot, keep uploading such excellent content!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I am amazed at how efficient this explanation is, truly a gift to humanity!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Fantastic breakdown of complicated topics, subscribing was an easy choice!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Just incredible, I didn't expect to learn so much in such a short time!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Perfectly presented, this deserves worldwide attention and distribution!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Such positivity in one video, it really makes the day brighter!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I feel more productive after watching this, outstanding value!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This creator is seriously underrated, such amazing dedication!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Every second of this video is beneficial, truly high-efficiency knowledge!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I strongly recommend this video to everyone who wants improvement!",
+        "Sentiment": "Positive",
+        "Prediction": "bot"
+    },
+
+    {
+        "Comment": "This video is extremely misleading and wastes viewers' time completely.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Terrible explanation, nothing valuable here, just confusion and clickbait.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I regret watching this, the information is poorly structured and unclear.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This is low-quality content that doesn't help anyone, disappointing experience.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Very bad production, the creator clearly didn't do proper research.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I dislike how everything here sounds forced and not honest at all.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This topic deserves far better coverage, this attempt feels extremely weak.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Sadly, this video provides no real value and only pretends to be informative.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "The narration is annoying, the pacing is off, overall unpleasant.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This adds nothing new, just recycled obvious points without insight.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I found this very inaccurate and misleading, definitely not trustworthy content.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Weak presentation, weak conclusions, not worth watching at all.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Feels like low-effort content just made for views, nothing authentic.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "The explanations are confusing and badly organized, unhelpful overall.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "One of the worst videos I have seen on this subject, very disappointing.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This video ignores important facts and spreads incomplete conclusions.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Not enjoyable, not informative, wouldn't recommend to anyone.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "The quality is so low that it's hard to take anything seriously.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Really underwhelming content, feels rushed and poorly executed.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This creator needs to improve drastically because this video fails in all aspects.",
+        "Sentiment": "Negative",
+        "Prediction": "bot"
+    },
+
+    {
+        "Comment": "Thanks for sharing, I will observe this information and decide later.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "The topic is interesting but I am not sure what conclusions to take from it.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I watched the whole video but I don't feel strongly about it either way.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "This could be useful for some people, though it depends on expectations.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I appreciate the effort but I remain undecided about the overall value.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "The information seems okay, but I'm not convinced about anything specific.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I'm not sure whether this will help me, but it's fine as general content.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "It’s an average video, nothing too special but nothing too bad either.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "I might revisit this later, not forming an opinion yet.",
+        "Sentiment": "Neutral",
+        "Prediction": "bot"
+    },
+    {
+        "Comment": "Some parts were interesting, others were just okay, overall neutral experience.",
         "Sentiment": "Neutral",
         "Prediction": "bot"
     }

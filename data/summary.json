@@ -1,73 +1,313 @@
 {
     "results": [
         {
-            "Comment": "what an insane build",
-            "Polarity": 0,
-            "Sentiment": "Positive",
-            "Prediction": "bot"
-        },
-        {
-            "Comment": "I’m a lurker but just wanted to say I only watch these while I poop. Great content to ease the stomach",
+            "Comment": "It is completely insane to me that we just casually hit all of these things in one go. You know it's ridiculous when there's no room to advertise the Wooglets + Apex synergy because it's not even the strongest thing in the build.",
             "Polarity": 0,
             "Sentiment": "Negative",
             "Prediction": "human"
         },
         {
-            "Comment": "16k damage on Sion. WTF. He broke the game.",
+            "Comment": "thandks for the vedeo",
             "Polarity": 0,
-            "Sentiment": "Neutral",
+            "Sentiment": "Negative",
             "Prediction": "bot"
         },
         {
-            "Comment": "thank you for changing the upload schedule again <33333 love you bro!",
+            "Comment": "Bruh the amount of high rolling in this video made me go through all 5 stages of grief. Amazing work.\nAlso, the title I got:\nSecret \"Augment 405\": Double Minionmancer + Apex Inventor GOD Tier Highroll League Arena Gameplay",
             "Polarity": 0,
             "Sentiment": "Positive",
             "Prediction": "bot"
         },
         {
-            "Comment": "very e",
+            "Comment": "Secret \"Augment 405\": Double Minionmancer + Apex Inventor GOD Tier Highroll this is the title i got i stg its always GOD tier something in my recommendeds lol",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "mario <3",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "peak",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "ngl even tho I love seeing the builds, the best part of this videos is just \"bros being bros\"",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Awaga Awoogoo",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Love this vid nidd thank you. You're my favorite youtuber right now",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "playing with noclip is crazy. i would lose my mind.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "6:30 QUALITY 4",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Oh yeah baby, engagement time",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "I got the title \"Secret 'Augment 405': Double Minionmancer + Apex God Tier Highroll\" and I really liked it! I think the augment 405 part was def a really good hook (and I just clicked without reading the rest), but I don't really know if other people feel similarly or not",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Secret \"Augment 405\": Double Minionmancer + Apex Inventor GOD Tier Highroll | League Arena Gameplay\n\nand its okay",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "12:45 Homie Mario showing them eses",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": ">looks inside\n>too much shit\n>looks outside\n>too much shit",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "How do you get golden border ?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Title i got: Secret \"Augment 405\": Double Minionmancer + Apex Inventor GOD Tier Highroll\nvery good.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "I was a casual for fun aram player. Since you are posting arena content, I am watching you everyday. Now I feel I became the most try hard player in Aram.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "6:23 tier 4 item",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Thanks for remembering me to like, my dumbass would forget about everything",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Really good video",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "15:30 could also be -3. or ASCII group separator. or",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "14:29 “I love destruction” while also simultaneously raising an army of grubs is insane",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "12:57 THE PREDICTION GOES CRAZY",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Illaoi, tentacles\n\nVel Koz, tentacles\n\ni see i see",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Your right. What a crazy high roll",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "Now try all hat video(fans involved fir the sake of sanity) where you get aug 405 with mad hatter",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "congrats on 200k. idk if the title i got matters because I watch you daily regardless of title lol",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "405 perfect infinite zhonyas double Minionmancer + kayn E idk man lsd",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "6:09 what is selling the rod thing?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "engagement comment",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Youre always carefully crafting the most obnoxious and frustrating builds to play against lmaoo",
             "Polarity": 0,
             "Sentiment": "Negative",
             "Prediction": "human"
         },
         {
-            "Comment": "-Day: 8 of asking king too finally make a samira video",
-            "Polarity": 0,
-            "Sentiment": "Neutral",
-            "Prediction": "bot"
-        },
-        {
-            "Comment": "Give the editor a raise",
+            "Comment": "algo boost",
             "Polarity": 0,
             "Sentiment": "Positive",
             "Prediction": "bot"
         },
         {
-            "Comment": "Actually love nighog vids, i play on EUW, wish to play with him one day. Watch everything (Not hate watching). I dont get those that does that Lmao",
-            "Polarity": 0,
-            "Sentiment": "Positive",
-            "Prediction": "bot"
-        },
-        {
-            "Comment": "LMAOOOO the fire sale moment",
+            "Comment": "Secret \"Augment 405\": Double Minionmancer + Apex Inventor GOD Tier Highroll | League Arena Gameplay  and i really dont read the title just see the image and click",
             "Polarity": 0,
             "Sentiment": "Neutral",
             "Prediction": "bot"
         },
         {
-            "Comment": "Loved the video this time around. Even the bonus game at the end was nice.",
+            "Comment": "We get:                       You get:\n\nInsane video              Liked & subscribed",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "this might be one of the best videos you've put up",
             "Polarity": 0,
             "Sentiment": "Positive",
             "Prediction": "human"
+        },
+        {
+            "Comment": "do mario and erik have a youtube channel or something ?",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "I just saw the thumbnail that said super secret augment and its names was an error code so i clicked it",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "This was fucking insane to watch",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Would it be possible for you to do a few builds where you focus on massive amouse of healing or sheilding? like support based i know you dont like doing it often as it doesnt pull as many veiws but id love to see more!",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": ">looks inside \n>checks nidhogg's reply\n>gets got",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Stewie2k reference",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "have my like and 21 minutes of watchtime",
+            "Polarity": 0,
+            "Sentiment": "Neutral",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Augment 405? Insane double minionmancer and apex godrun was my title. Ngl tho I just watch whatever vid you post. If it's a control mage, fun adc(twitch, mf, tristana, etc), or some troll concept that shouldn't work, I watch right away. If it's a beefcake I usually click off, and then watch it later anyways cause it's still gonna be good.\n\nHope the info helps. I like how you do your stuff and how you market. The impression your marketing gives is like \"Doing what I have to even though I'd prefer to be specific\", which is perfect to me.",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Nice videos but the insecure talk about comments is starting to be boring and repetitive.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "king nidhogg velkoz is giving me cancer but it's fine I still love him",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "Ah, the classic con crud. I can tell it can't keep you from your uncanny highrolls.",
+            "Polarity": 0,
+            "Sentiment": "Negative",
+            "Prediction": "human"
+        },
+        {
+            "Comment": "The title I got was: Secret \"Augment 405\": Double Minionmancer + Apex Inventor GOD Tier Highroll | League Arena Gameplay\nHonestly that was intriguing enough",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
+        },
+        {
+            "Comment": "I love how persona 4 specialist just become so deeply rooted in binding of isaac when getting Q4 items",
+            "Polarity": 0,
+            "Sentiment": "Positive",
+            "Prediction": "bot"
         }
     ],
     "summary": {
-        "total_comments": 10,
-        "positive_comments": 5,
-        "negative_comments": 2,
-        "neutral_comments": 3,
-        "human_comments": 3,
-        "bot_comments": 7,
-        "llm_summary": "Summary:\n\n1. The main topics discussed in the comments are positive reactions to a recent video, gratitude for the content, and personal anecdotes about how the videos help them relax during certain activities (watching King's gameplay while on the toilet).\n2. The overall sentiment is overwhelmingly positive, with users expressing appreciation and enjoyment of the content.\n3. There is no apparent spam-like behavior or recurring questions, as all comments seem to be genuine reactions from individual viewers."
+        "total_comments": 50,
+        "positive_comments": 15,
+        "negative_comments": 12,
+        "neutral_comments": 23,
+        "human_comments": 5,
+        "bot_comments": 45,
+        "llm_summary": "Summary:\n\nThe main topics of discussion in the comments are the quality of the videos (specifically, some viewers finding the talk about comments section repetitive) and a question about whether creators \"do mario\" or have a YouTube channel. \n\nThe overall sentiment is mixed with a leaning towards being negative towards the repetition of discussing comments. There isn't much positive sentiment expressed directly.\n\nThere doesn't appear to be any obvious patterns, recurring questions, or spam-like behavior in this set of comments."
     }
 }

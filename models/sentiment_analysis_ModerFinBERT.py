@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
+from typing import Optional
 
 # --- Load model and tokenizer once on module import ---
 MODEL_NAME = "tabularisai/multilingual-sentiment-analysis"
@@ -19,13 +20,13 @@ def predict_sentiment(texts):
     return [sentiment_map[p.item()] for p in torch.argmax(probabilities, dim=-1)]
 
 
-def sentiment_analysis(filename="data/comments.json", output_filename="data/sentiment_results.json"):
+def sentiment_analysis(filename="data/comments.json", output_filename="data/sentiment_results.json") -> Optional[list[dict]]:
     try:
         with open(filename, "r", encoding="utf-8") as f:
             comments = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         print("Nem található megfelelő JSON fájl!")
-        return
+        return None
 
     # Process all comments in a single batch for efficiency
     results = predict_sentiment(comments) if comments else []
@@ -39,6 +40,7 @@ def sentiment_analysis(filename="data/comments.json", output_filename="data/sent
         json.dump(sentiment_results, f, ensure_ascii=False, indent=4)
     
     print("Sentiment elemzés eredménye mentve:", output_filename)
+    return sentiment_results
     
 if __name__ == "__main__":
     sentiment_analysis()

@@ -1,36 +1,36 @@
 {
     "sentiment_analysis_performance": {
-        "accuracy": 0.63,
+        "accuracy": 0.5,
         "classification_report": {
             "Positive": {
-                "precision": 0.7741935483870968,
-                "recall": 0.8,
-                "f1-score": 0.7868852459016393,
+                "precision": 0.40384615384615385,
+                "recall": 0.7,
+                "f1-score": 0.5121951219512195,
                 "support": 30.0
             },
             "Neutral": {
-                "precision": 0.631578947368421,
-                "recall": 0.34285714285714286,
-                "f1-score": 0.4444444444444444,
+                "precision": 0.4782608695652174,
+                "recall": 0.3142857142857143,
+                "f1-score": 0.3793103448275862,
                 "support": 35.0
             },
             "Negative": {
-                "precision": 0.54,
-                "recall": 0.7714285714285715,
-                "f1-score": 0.6352941176470588,
+                "precision": 0.72,
+                "recall": 0.5142857142857142,
+                "f1-score": 0.6,
                 "support": 35.0
             },
-            "accuracy": 0.63,
+            "accuracy": 0.5,
             "macro avg": {
-                "precision": 0.648590831918506,
-                "recall": 0.638095238095238,
-                "f1-score": 0.6222079359977142,
+                "precision": 0.5340356744704571,
+                "recall": 0.5095238095238095,
+                "f1-score": 0.4971684889262686,
                 "support": 100.0
             },
             "weighted avg": {
-                "precision": 0.6423106960950764,
-                "recall": 0.63,
-                "f1-score": 0.613974070502518,
+                "precision": 0.5405451505016723,
+                "recall": 0.5,
+                "f1-score": 0.496417157275021,
                 "support": 100.0
             }
         },
@@ -42,19 +42,19 @@
             ],
             "matrix": [
                 [
-                    24,
-                    2,
-                    4
+                    21,
+                    8,
+                    1
                 ],
                 [
+                    18,
+                    11,
+                    6
+                ],
+                [
+                    13,
                     4,
-                    12,
-                    19
-                ],
-                [
-                    3,
-                    5,
-                    27
+                    18
                 ]
             ]
         }

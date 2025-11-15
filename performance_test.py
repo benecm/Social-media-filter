@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 
 # Import the analysis functions you want to test.
-from models.sentiment_analysis_ModerFinBERT import sentiment_analysis as analyze_sentiment
+from models.sentiment_analysis_textblob import sentiment_analysis as analyze_sentiment
 from models.bot_detection_modell import run_bot_detection
 
 # Define constants for file paths
@@ -72,7 +72,7 @@ def run_performance_test():
 
     # 3. Run the models to get predictions
     print("Running sentiment analysis model...")
-    analyze_sentiment(TEMP_COMMENTS_PATH, TEMP_SENTIMENT_PATH)
+    analyze_sentiment(TEMP_COMMENTS_PATH, TEMP_SENTIMENT_PATH)#,use_original_tags=False) #not every case needed the tuse original tags.
     
     print("Running bot detection model...")
     run_bot_detection(TEMP_COMMENTS_PATH, TEMP_BOT_PATH)

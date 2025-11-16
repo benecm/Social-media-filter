@@ -3,7 +3,7 @@ import os
 import json
 from unittest.mock import patch, mock_open
 
-from models.bot_detection_modell import run_bot_detection
+from models.bot_detection_tdrenis import run_bot_detection
 
 class TestBotDetection(unittest.TestCase):
 

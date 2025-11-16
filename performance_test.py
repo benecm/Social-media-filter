@@ -5,7 +5,7 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 
 # Import the analysis functions you want to test.
 from models.sentiment_analysis_textblob import sentiment_analysis as analyze_sentiment
-from models.bot_detection_modell import run_bot_detection
+from models.bot_detection_distilroberta import run_bot_detection
 
 # Define constants for file paths
 DATA_DIR = "data"

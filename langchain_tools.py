@@ -1,7 +1,7 @@
 from langchain.tools import BaseTool
 from research.Functions import get_youtube_comments, save_comments_to_json
 from models.sentiment_analysis_ModerFinBERT import sentiment_analysis
-from models.bot_detection_modell import run_bot_detection
+from models.bot_detection_tdrenis import run_bot_detection
 from models.reasoning import get_quantitative_summary, summarize_with_rag
 import os
 import json

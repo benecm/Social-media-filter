@@ -1,0 +1,302 @@
+{
+"sentiment_analysis_bertmultilingual": {
+        "accuracy": 0.73,
+        "classification_report": {
+            "Positive": {
+                "precision": 0.7027027027027027,
+                "recall": 0.8666666666666667,
+                "f1-score": 0.7761194029850746,
+                "support": 30.0
+            },
+            "Neutral": {
+                "precision": 0.7727272727272727,
+                "recall": 0.4857142857142857,
+                "f1-score": 0.5964912280701754,
+                "support": 35.0
+            },
+            "Negative": {
+                "precision": 0.7317073170731707,
+                "recall": 0.8571428571428571,
+                "f1-score": 0.7894736842105263,
+                "support": 35.0
+            },
+            "accuracy": 0.73,
+            "macro avg": {
+                "precision": 0.7357124308343822,
+                "recall": 0.7365079365079366,
+                "f1-score": 0.7206947717552588,
+                "support": 100.0
+            },
+            "weighted avg": {
+                "precision": 0.737362917240966,
+                "recall": 0.73,
+                "f1-score": 0.717923540193768,
+                "support": 100.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "Positive",
+                "Neutral",
+                "Negative"
+            ],
+            "matrix": [
+                [
+                    26,
+                    2,
+                    2
+                ],
+                [
+                    9,
+                    17,
+                    9
+                ],
+                [
+                    2,
+                    3,
+                    30
+                ]
+            ]
+        }
+    },
+    "sentiment_analysis_bertmini": {
+        "accuracy": 0.63,
+        "classification_report": {
+            "Positive": {
+                "precision": 0.7222222222222222,
+                "recall": 0.8666666666666667,
+                "f1-score": 0.7878787878787878,
+                "support": 30.0
+            },
+            "Neutral": {
+                "precision": 0.5116279069767442,
+                "recall": 0.6285714285714286,
+                "f1-score": 0.5641025641025641,
+                "support": 35.0
+            },
+            "Negative": {
+                "precision": 0.7142857142857143,
+                "recall": 0.42857142857142855,
+                "f1-score": 0.5357142857142857,
+                "support": 35.0
+            },
+            "accuracy": 0.63,
+            "macro avg": {
+                "precision": 0.6493786144948936,
+                "recall": 0.6412698412698413,
+                "f1-score": 0.6292318792318792,
+                "support": 100.0
+            },
+            "weighted avg": {
+                "precision": 0.6457364341085271,
+                "recall": 0.63,
+                "f1-score": 0.6212995337995337,
+                "support": 100.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "Positive",
+                "Neutral",
+                "Negative"
+            ],
+            "matrix": [
+                [
+                    26,
+                    3,
+                    1
+                ],
+                [
+                    8,
+                    22,
+                    5
+                ],
+                [
+                    2,
+                    18,
+                    15
+                ]
+            ]
+        }
+    },
+    "sentiment_analysis_modernFinBERT": {
+        "accuracy": 0.63,
+        "classification_report": {
+            "Positive": {
+                "precision": 0.7741935483870968,
+                "recall": 0.8,
+                "f1-score": 0.7868852459016393,
+                "support": 30.0
+            },
+            "Neutral": {
+                "precision": 0.631578947368421,
+                "recall": 0.34285714285714286,
+                "f1-score": 0.4444444444444444,
+                "support": 35.0
+            },
+            "Negative": {
+                "precision": 0.54,
+                "recall": 0.7714285714285715,
+                "f1-score": 0.6352941176470588,
+                "support": 35.0
+            },
+            "accuracy": 0.63,
+            "macro avg": {
+                "precision": 0.648590831918506,
+                "recall": 0.638095238095238,
+                "f1-score": 0.6222079359977142,
+                "support": 100.0
+            },
+            "weighted avg": {
+                "precision": 0.6423106960950764,
+                "recall": 0.63,
+                "f1-score": 0.613974070502518,
+                "support": 100.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "Positive",
+                "Neutral",
+                "Negative"
+            ],
+            "matrix": [
+                [
+                    24,
+                    2,
+                    4
+                ],
+                [
+                    4,
+                    12,
+                    19
+                ],
+                [
+                    3,
+                    5,
+                    27
+                ]
+            ]
+        }
+    },
+    "sentiment_analysis_twitter_RoBERTa": {
+        "accuracy": 0.72,
+        "classification_report": {
+            "Positive": {
+                "precision": 0.75,
+                "recall": 0.9,
+                "f1-score": 0.8181818181818182,
+                "support": 30.0
+            },
+            "Neutral": {
+                "precision": 0.7,
+                "recall": 0.4,
+                "f1-score": 0.509090909090909,
+                "support": 35.0
+            },
+            "Negative": {
+                "precision": 0.7045454545454546,
+                "recall": 0.8857142857142857,
+                "f1-score": 0.7848101265822784,
+                "support": 35.0
+            },
+            "accuracy": 0.72,
+            "macro avg": {
+                "precision": 0.7181818181818181,
+                "recall": 0.7285714285714286,
+                "f1-score": 0.7040276179516685,
+                "support": 100.0
+            },
+            "weighted avg": {
+                "precision": 0.7165909090909091,
+                "recall": 0.72,
+                "f1-score": 0.6983199079401611,
+                "support": 100.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "Positive",
+                "Neutral",
+                "Negative"
+            ],
+            "matrix": [
+                [
+                    27,
+                    2,
+                    1
+                ],
+                [
+                    9,
+                    14,
+                    12
+                ],
+                [
+                    0,
+                    4,
+                    31
+                ]
+            ]
+        }
+    },
+    "sentiment_analysis_textblob": {
+        "accuracy": 0.5,
+        "classification_report": {
+            "Positive": {
+                "precision": 0.40384615384615385,
+                "recall": 0.7,
+                "f1-score": 0.5121951219512195,
+                "support": 30.0
+            },
+            "Neutral": {
+                "precision": 0.4782608695652174,
+                "recall": 0.3142857142857143,
+                "f1-score": 0.3793103448275862,
+                "support": 35.0
+            },
+            "Negative": {
+                "precision": 0.72,
+                "recall": 0.5142857142857142,
+                "f1-score": 0.6,
+                "support": 35.0
+            },
+            "accuracy": 0.5,
+            "macro avg": {
+                "precision": 0.5340356744704571,
+                "recall": 0.5095238095238095,
+                "f1-score": 0.4971684889262686,
+                "support": 100.0
+            },
+            "weighted avg": {
+                "precision": 0.5405451505016723,
+                "recall": 0.5,
+                "f1-score": 0.496417157275021,
+                "support": 100.0
+            }
+        },
+        "confusion_matrix": {
+            "labels": [
+                "Positive",
+                "Neutral",
+                "Negative"
+            ],
+            "matrix": [
+                [
+                    21,
+                    8,
+                    1
+                ],
+                [
+                    18,
+                    11,
+                    6
+                ],
+                [
+                    13,
+                    4,
+                    18
+                ]
+            ]
+        }
+    }
+}
